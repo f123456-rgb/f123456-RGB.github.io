@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<head>
+    <style>
+        /* 第一個版面 */
+        .group{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            width: 100%;
+            border: 1px solid #000080;
+            background-color: #000080;
+            color: white;
+            justify-content: flex-end;      
+        }
+        .colLeft{
+            display: flex;
+
+        }
+        .colLeft p{
+            margin: 5px;
+            display: flex;
+        }
+        .colLeft button{
+        background-color: #00142D;
+        border: none;
+        color: #fff;
+        padding-right: 20px;
+        border-right: 1px solid #fff;
+        }
+        /* 第二個版面 */
+        .group1{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: justify;
+        }
+        .col1{
+            width: 1200px; 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;    
+        }
+        .col1 img{
+            text-align: justify;
+        }
+        .col1-1{
+            
+            /* justify-content: space-around; */
+        }
+        /* 第三個版面 */
+        .group2{
+            width: 100%;
+            height: 10cm;
+            margin: auto;
+            border: 1px solid #000080;
+            background-color: #000080;
+            color: white;
+        }
+        .col2 img{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .col2 mail-btn{
+            background-color: #00142D;
+            border: none;
+            color: #fff;
+            padding-right: 20px;
+            border-right: 1px solid #fff;
+        }
+        /* .header-top button{} */
+        /* 第四個版面 */
+        .group3{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            color: #000;
+            background-color: #fff;
+        }
+        .col13{
+
+        }
+        /* 第五個版面 */
+        .group4{
+            flex-direction: row;
+            width: 100%;
+            background-color: #fff;
+        }
+        .col4{
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            /* uto;margin: a */
+        }
+        .col4 img{
+        
+        }
+        .col4 h1{   
+            
+        }
+        .col4 p{
+           
+        }
+        .listLeft ul{ 
+            border: 1px;
+            width: 200px;
+            float: left;
+        } 
+        .listRight ul{
+            display: inline;
+        }
+        /* 第六個版面 */
+        .group5{
+            width: 100%;
+            display: flex; 
+            justify-content: center;
+            text-align: justify;
+            /* margin-right: auto; */
+        }
+        .group5 img{
+            /* width: 100%; */
+            /* margin: auto;  */
+            /* padding: 100px; */
+            flex-direction: row;
+        }
+        .col5{
+            display: flex;
+        }
+        /* 第七個版面 */
+        .group6{
+            width: 100%;
+            flex-direction: row;
+            background: white;
+        }
+        .col6{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+        .group img{
+
+        }
+        /* 第八個版面 */
+        .group7{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: justify;
+        }
+        .col7{
+            display: flex;
+        }
+        .group7 img{
+            flex-direction: row;
+        }
+        /* 第九個版面 */
+        .group8{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border: #000 solid 1px;
+            
+        }
+        .col8{
+            margin: auto;
+            /* justify-items: right; */
+            justify-self: flex-start;
+            /* justify-items: flex-start; */
+            /* flex-direction: row; */
+            /* justify-content: start; */
+            /* margin: 20px;
+            padding: 10px; */
+            /* flex-direction: row-reverse; */
+        }
+        .group8one{
+            text-align: center;
+        }
+        .group8two{
+            width: 100%;
+            justify-items:left;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 第一個版面 -->
+        <div class="group">
+            <div class="colLeft">
+                <img src="https://media.istockphoto.com/vectors/global-icon-vector-id495573478" alt="" width="30" height="30">
+                <!-- <button class="Golbal-blue">
+                   <i class="fa-solid fa-globe">
+                    
+                   </i> 
+                </button> -->
+                <p>幫助中心</p>
+                <p>登入網店</p> 
+            </div>
+        </div>
+        <!-- 第二個版面 -->
+        <div class="group1">
+            <div class="col1">
+                <img src="https://img.shoplineapp.com/media/image_clips/60811bb98a60d74a03808d4d/original.png?1619073977" alt="SHOPLINE" width="160" height="27">
+                <p>開店服務</p>
+                <p>方案費用</p>
+                <p>客戶案例</p>
+                <p>開店說明會</p>
+                <p>開店查詢</p>
+                <p>更多解決方案</p>
+                <p>其它資源</p>
+            <div class="col1-1">
+                <p>免費試用</p>
+            </div>    
+            </div>
+        </div>
+        <!-- 第三個版面 -->
+        <div class="group2">
+            <div class="col2">
+                <h1>想在哪開店創業？
+                    <br>
+                <span>門市必備零售 pos 系統</span>
+                </h1>
+                <h3>超過35萬品牌使用 ！ 從個人賣家到國際品牌 ， 都能以SHOPLINE實現全通路零 <br> 售 ，
+                    快速拓展市場到世界各地，輕鬆開始你的『店』商生意！
+                </h3>
+                <form>
+                    <label>
+                        <input class="input-email" type="email" placeholder="請在此輸入電子信箱 (可隨時更換)" required=""
+                        style="color: black;">
+                    </label>
+                    <button type="submit" class="mail-btn">免費試用</button>
+                </form>
+            </div>
+            <!-- <div>
+                <img srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.webp?source_format=png 320w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/630x.webp?source_format=png 601w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/920x.webp?source_format=png 768w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/540x.webp?source_format=png 992w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/800x.webp?source_format=png 1121w"
+                    sizes="(min-width: 320px) 504px, (min-width: 601px) 627px, (min-width: 768px) 921px, (min-width: 992px) 535px (min-width: 1121px) 770px,"
+                    src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/510x.webp?source_format=png"
+                    width="330" height="583" alt="SHOPLINE POS 系統">
+            </div> -->
+        </div>
+        <!-- 第四個版面 -->
+        <div class="group3">
+            <div class="col3">
+                <h1>單一平台就能助你 <br> 在全通路輕鬆開店創業 </h1>
+                <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業， <br> 並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！ </p>
+            </div>
+        </div>
+        <!-- 第五個版面 -->
+        <div class="group4">
+            <div class="col4">
+                <img src="https://picsum.photos/300/200/?random=10">
+                <div>
+                    <h1>免寫程式、多款版型 <br> 輕鬆打造全能電商網站</h1>
+                        <br>
+                    <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設  <br> 計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡 <br> 單。</p>
+                    <div class="listLeft">
+                        <ul>
+                            <li>豐富版型主題與字型搭配</li>
+                            <li>獨有網址 ＆ SSL 安全憑證</li>
+                            <li>一頁商店</li>
+                            <br>
+                            <li>看看開店祕技</li>
+                        </ul>
+                        <div class="listRight">
+                            <ul>
+                                <li>RWD 響應式網頁設計</li>
+                                <li>SEO 搜尋引擎優化</li>
+                                <li>開放 HTML／CSS 編輯</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第六個版面 -->
+        <div class="group5">
+            <div class="col5">
+            <img src="https://picsum.photos/300/200/?random=10">
+                <div>
+                    <h1>支持海內外電商 <br> 金流、物流一次搞定</h1>
+                        <br>
+                    <p>支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送 <br> 貨服務，加速消費者完成下單交易，大幅降低購物車放棄率！</p>
+                    <div class="listLeft">
+                        <ul>
+                            <li>線上信用卡刷卡</li>
+                            <li>超商代碼／條碼繳費</li>
+                            <li>超商／宅配貨到付款</li>
+                            <br>
+                            <li>了解更多金物流</li>
+                        </ul>
+                        <div class="listRight">
+                            <ul>
+                                <li>第三方金流／行動支付整合</li>
+                                <li>多溫層宅配並指定運費</li>
+                                <li>發票開立與串接</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <!-- 第七個版面 -->
+        <div class="grup6">
+            <div class="col6">
+                <img src="https://picsum.photos/300/200/?random=10">
+                <div>
+                    <h1>刺激下單，創造回購 <br> 行銷導流、促購模組任你玩</h1>
+                        <br>
+                    <p>多元優惠活動、會員集客機制、網紅分潤以及直播購物等豐富功能，將 <br> 電商行銷玩法一網打盡，助你成功優化行銷活動成效，刺激顧客下單、 <br> 吸引鐵粉回購！</p>
+                    <div class="listLeft">
+                        <ul>
+                            <li>超過 20 種優惠促銷功能</li>
+                            <li>會員分級／點數／購物金</li>
+                                <br>
+                            <li>Instagram 購物功能</li>
+                            <br>
+                            <li>看更多優惠模組</li>
+                        </ul>
+                        <div class="listRight">
+                            <ul>
+                                <li>社群直播購物系統</li>
+                                <li>Facebook／Google／LINE廣告追蹤</li>
+                                <li>Facebook／Instagram／LINE對話式購物</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <!-- 第八個版面 -->
+        <div class="group7">
+            <div class="col7">
+                <img src="https://picsum.photos/300/200/?random=10">
+                <div>
+                    <h1>O2O 全通路無縫整併 <br> 輕鬆管理網店、門市以及其他通路</h1>
+                        <br>
+                    <p>不論是網店拓展門市，還是門市想發展網路生意，從商品、庫存、訂單 <br> 等各項虛實店舖的資料都能完善整併，輕鬆實現全通路會員經營到多店 <br> 營運。</p>
+                        <div class="listLeft">
+                            <ul>
+                                <li>門市 POS 系統</li>
+                                <li>門市快速集客工具</li>
+                                <li>進銷庫存／調撥／多店管理</li>
+                                <br>
+                                <li>了解更多全通路組合</li>
+                            </ul>
+                            <div class="listRight">
+                                <ul>
+                                    <li>線上線下會員／商品／庫存整合</li>
+                                    <li>O2O 即時銷售報表分析</li>
+                                    <li>串接 Shopee 蝦皮購物庫存</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第九個版面     -->
+        <div class="group8">
+            <div class="col8"> 
+                    <div class="group8one"><h1>更多功能與服務</h1></div>
+                        <div class="group8two">
+                            <img src="https://img.shoplineapp.com/media/image_clips/5efef5c3b774cf002ab000ce/original.png?1593767363">
+                            <h1>強大庫存及訂單系統</h1>
+                            <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+                            
+                            <img src="https://picsum.photos/300/200/?random=10">
+                            <h1>即時化商店業績分析</h1>
+                            <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>    
+                        </div>
+                        <!-- <img src="https://img.shoplineapp.com/media/image_clips/5efef5c3b774cf002ab000ce/original.png?1593767363">
+                        <h1>強大庫存及訂單系統</h1>
+                        <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+                        
+                        <img src="https://picsum.photos/300/200/?random=10">
+                        <h1>即時化商店業績分析</h1>
+                        <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p> -->
+
+                        <img src="https://picsum.photos/300/200/?random=10">
+                        <h1>即時化商店業績分析</h1>
+                        <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>
+
+                        <img src="https://picsum.photos/300/200/?random=10">
+                        <h1>強大庫存及訂單系統</h1>
+                        <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+
+                        <img src="https://picsum.photos/300/200/?random=10">
+                        <h1>強大庫存及訂單系統</h1>
+                        <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+
+                        <img src="https://picsum.photos/300/200/?random=10">
+                        <h1>強大庫存及訂單系統</h1>
+                        <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
+        </div>
+</body>
+</html>
