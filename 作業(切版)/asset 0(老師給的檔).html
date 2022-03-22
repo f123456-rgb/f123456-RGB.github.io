@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html ng-app="main_app" lang="zh-Hant">
+<head>
+  <!-- / -->
+
+  <title>SHOPLINE 全球智慧開店平台｜完整開店功能讓你的生意不斷成長</title>
+<meta name="description" content="SHOPLINE 提供一站式網路開店服務，協助超過 35 萬品牌建立電商事業！提供網站架設、社群商務、POS 系統等工具，及豐富課程資源，立即申請免費試用！">
+<link rel="alternate" href="https://shoplineapp.com/" hreflang="x-default">
+<link rel="alternate" href="https://shopline.tw/" hreflang="zh-Hant-TW">
+<link rel="alternate" href="https://shopline.hk/" hreflang="zh-Hant-HK">
+<link rel="alternate" href="https://shopline.hk/en/" hreflang="en-HK">
+<link rel="alternate" href="https://shoplineapp.sg/" hreflang="en-SG">
+<link rel="alternate" href="https://shopline.my/" hreflang="en-MY">
+<link rel="alternate" href="https://shopline.my/zh-hans/" hreflang="zh-Hans-MY">
+<link rel="alternate" href="https://shopline.com.vn/" hreflang="vi-VN">
+<link rel="alternate" href="https://shopline.co.th/" hreflang="th-TH">
+<link rel="alternate" href="https://shopline.ph/" hreflang="en-PH">
+<link rel="alternate" href="https://shoplineapp.com/" hreflang="en">
+<meta property="og:title" content="SHOPLINE 全球智慧開店平台｜網路開店免費試用">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="shopline">
+<meta property="og:url" content="https://shopline.tw/">
+<meta property="og:image" content="https://img.shoplineapp.com/media/image_clips/620c955b24e7aa002f81b03d/original.png?1644991835">
+<meta property="og:description" content="💰 想開店做生意？💰 SHOPLINE 開店平台提供 ✅ 網路開店 ✅ 社群購物 ✅ POS 系統等服務，幫你一站式解決金物流串接、會員管理、商店設計、訂單管理等開店常見問題，所有功能皆可免費試用，已有超過 35 萬店家在 SHOPLINE 成功開店！">
+
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" media="all" href="https://dt9jl8a7gc9zr.cloudfront.net/assets/application-af6daa8365ea5b4b2dfd75d7fbf284d77d02c1fe3b24a7deedc275426a3e1237.css" />
+
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="canonical" href="https://shopline.tw/">
+  <link href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" rel="preload" as="style">
+
+  <link rel="stylesheet" media="screen" href="https://dt9jl8a7gc9zr.cloudfront.net/assets/main/sass/pages/header-footer-a1cb751eaa1f09f811e310ab302f0ba4a60db49ab7bdc05b98d8cfda8a870ae6.css" />
+    <link rel="stylesheet" media="screen" href="https://dt9jl8a7gc9zr.cloudfront.net/assets/main/sass/pages/home-53bd6f57ec31b3a54f7a50419ad37d01424e1fac0b50525430a76d9b77c7ddea.css" />
+
+  <link rel="stylesheet" media="screen" href="https://dt9jl8a7gc9zr.cloudfront.net/assets/main/sass/pages/banner-319f6af6492474098decd0a21d998856041b6ee71ffd11e0972c601720464e02.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://s3-ap-southeast-1.amazonaws.com/static.shoplineapp.com/web/v7/apple-touch-icons/180px.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="https://s3-ap-southeast-1.amazonaws.com/static.shoplineapp.com/web/v7/apple-touch-icons/167px.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://s3-ap-southeast-1.amazonaws.com/static.shoplineapp.com/web/v7/apple-touch-icons/152px.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://s3-ap-southeast-1.amazonaws.com/static.shoplineapp.com/web/v7/apple-touch-icons/120px.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://s3-ap-southeast-1.amazonaws.com/static.shoplineapp.com/web/v7/apple-touch-icons/76px.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://s3-ap-southeast-1.amazonaws.com/static.shoplineapp.com/web/v7/apple-touch-icons/60px.png">
+
+    <!-- tracking code -->
+    <!-- start GTM -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PZM9WN2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PZM9WN2');</script>
+<!-- end GTM -->
+
+
+<!-- start intercom -->
+<script>
+  window.intercomSettings = {
+    app_id: "ryx6jq53"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ryx6jq53';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+<!-- end intercom -->
+
+
+<!-- start Hotjar -->
+<!-- Hotjar Tracking Code for All domains (.hk/.tw/.ph/.app/admin) -->
+<script>
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:74247,hjsv:5};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- end Hotjar -->
+
+
+<!-- start Bing Pixel -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"4056754"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=4056754&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+<!-- end Bing Pixel -->
+
+
+<!-- start Bridgewell tracking -->
+<script>
+  !function(b,r,i,d,g,e,w,l){if(b._bw)return;var j=r.createElement(i);j.async=!0;j.src=d;var d=r.getElementsByTagName(i)[0];d.parentNode.insertBefore(j,d)}(window,document,'script','https://img.scupio.com/js/pixel.js');
+(window._bwq = window._bwq || []).push(['init', '1175-13ZGG44Q14CD8A8']);
+(window._bwq = window._bwq || []).push(['trackSingle', '1175-13ZGG44Q14CD8A8', 'PageView']);
+</script>
+<!-- end Bridgewell tracking -->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://shopline.tw/",
+        "name": "SHOPLINE"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ** add json ld partial ** -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Corporation",
+  "brand": "SHOPLINE",
+  "description": "全球智慧開店平台，一舉創建管理線上＋線下商店",
+  "name":"SHOPLINE",
+  "url":"https://shopline.tw/",
+  "logo":"https://img.shoplineapp.com/media/image_clips/60811bb98a60d74a03808d4d/original.png?1619073977",
+  "founders": [
+    "Tony 黃浩昌",
+    "Fiona 劉煦怡"
+  ],
+  "foundingDate": "2013",
+  "foundingLocation": "香港",
+  "interactionCount": "全亞洲超過 35 萬個品牌使用",
+  "legalName": "商線科技股份有限公司",
+  "sameAs": [
+    "https://line.me/R/ti/p/%40prs5793t",
+    "https://www.facebook.com/shopline.tw/",
+    "https://www.instagram.com/shopline_tw/",
+    "https://tw.linkedin.com/company/shopline",
+    "https://www.youtube.com/channel/UCSXRPhXUnKfp0iqM6VHOR2A"
+  ],
+  "slogan": "唯有客戶成功，才是我們的成功！",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+886287682010",
+      "contactType": "customer service",
+      "areaServed": "TW"
+    }
+  ]
+}
+</script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#scrollspy" data-offset="500" class="home-index index app-home home-index-zh-tw banner-top-show" ng-controller="MainController">
+  <div class="responsive-state" style="display: none;">
+    <div class="visible-xs-block">XS</div>
+    <div class="visible-sm-block">SM</div>
+    <div class="visible-md-block">MD</div>
+    <div class="visible-lg-block">LG</div>
+    <div class="visible-xl-block">XL</div>
+  </div>
+  <div class="view app viewing-index">
+    <!-- header -->
+      <header class="header-revamp custom-width">
+  <a class="logo-wrap" href="/">
+    <img src="https://img.shoplineapp.com/media/image_clips/60811bb98a60d74a03808d4d/original.png?1619073977" alt="SHOPLINE" width="160" height="27">
+  </a>
+  <div class="mobile-header-wrap">
+    <div class="ham-btn pad-show">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </div>
+    <div class="header-top custom-width">
+      <div class="lang--switch pad-hide">
+        
+<div class="btn-group dropdown">
+  <button class="dropdown-toggle btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"><i class="icons-lang"></i><span class="lang-wording pad-show">台灣 (中文)</span></button>
+  <div class="dropdown-menu">
+      <a href="https://shopline.tw/" class="dropdown-item is-active">台灣 (中文)</a>
+      <a href="https://shopline.hk/" class="dropdown-item">香港 (中文)</a>
+      <a href="https://shopline.hk/en/" class="dropdown-item">Hong Kong (ENG)</a>
+      <a href="https://shoplineapp.sg/" class="dropdown-item">Singapore (ENG)</a>
+      <a href="https://shopline.my/zh-hans/" class="dropdown-item">马来西亚 (中文)</a>
+      <a href="https://shopline.my/" class="dropdown-item">Malaysia (ENG)</a>
+      <a href="https://shopline.ph/" class="dropdown-item">Philippines (ENG)</a>
+      <a href="https://shopline.com.vn/" class="dropdown-item">Tiếng Việt</a>
+      <a href="https://shopline.co.th/" class="dropdown-item">ภาษาไทย</a>
+      <a href="https://shoplineapp.com/" class="dropdown-item">Global</a>
+  </div>
+</div>
+
+      </div>
+      <a class="pad-hide" href="/faq/overview" target="_blank">幫助中心</a>
+      <a class="pad-hide" href="https://admin.shoplineapp.com/users/sign_in?locale=zh-hant&amp;">登入網店</a>
+      <a class="pad-show" href="https://consultation.shopline.tw" target="_blank">開店諮詢</a>
+      <a class="pad-show" href="https://seminar.shopline.tw" target="_blank">開店說明會</a>
+    </div>
+    <div class="header-pannel custom-width">
+      <nav class="nav-list">
+        <ul>
+          <li class="list-click"><a>開店服務<i class="icons-arrow-down"></i></a>
+            <nav class="nav-drop-list nav-drop-list-custom-left">
+              <h3>想在哪開店？</h3>
+              <p>我們提供一應俱全的全通路開店服務，從社群、網店到實體零售門市，<br>都能依據品牌的需求、預算來彈性選配，一站讓你輕鬆開店！</p>
+              <div class="nav-drop-link">
+                <ul>
+                  <li>網路開店</li>
+                  <li><a href="/features/online-store"><i class="icons-feature"></i>功能介紹</a></li>
+                  <li><a href="/templates"><i class="icons-template"></i>版型主題</a></li>
+                  <li><a href="/online-store-setup"><i class="icons-tips"></i>開店秘技</a></li>
+                  <li><a href="/faq/overview"><i class="icons-faq"></i>新手問答</a></li>
+                </ul>
+                <ul>
+                  <li>社群購物</li>
+                  <li><a href="/social-commerce/features"><i class="icons-feature"></i>功能介紹</a></li>
+                  <li><a href="/faq/overview"><i class="icons-faq"></i>新手問答</a></li>
+                </ul>
+                <ul>
+                  <li>零售 POS</li>
+                  <li><a href="/pos/features"><i class="icons-feature"></i>功能介紹</a></li>
+                  <li><a href="https://pos.shopline.tw/functioncase/hardware/" target="_blank"><i class="icons-pos-hardware"></i>週邊硬體</a></li>
+                  <li><a href="/faq/overview"><i class="icons-faq"></i>新手問答</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
+          <li class="list-click"><a>方案費用<i class="icons-arrow-down"></i></a>
+            <nav class="nav-drop-list">
+              <h3>方案費用</h3>
+              <p>不曉得自己適合哪個計畫？<br>歡迎<a href="https://consultation.shopline.tw/" target="_blank">聯繫開店顧問</a>解答任何疑難，亦可申請開店免費試用 14 天！</p>
+              <div class="nav-drop-link">
+                <ul class="no-title">
+                  <li><a href="/about/pricing"><i class="icons-pricing"></i>開店方案</a></li>
+                  <li><a href="/about/pricing/module"><i class="icons-module"></i>功能模組</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
+          <li class="list-click"><a href="/showcase">客戶案例</a></li>
+          <li class="list-click pad-hide"><a href="https://seminar.shopline.tw" target="_blank">開店說明會</a></li>
+          <li class="list-click pad-hide"><a href="https://consultation.shopline.tw" target="_blank">開店諮詢</a></li>
+          <li class="list-click"><a>更多解決方案<i class="icons-arrow-down"></i></a>
+            <nav class="nav-drop-list nav-drop-list-custom-right">
+              <h3>專為國際品牌企業量身打造</h3>
+              <p>從前期的需求訪談開始，我們將深入了解品牌端的作業流程，<br>明訂目標、擬定最合適的解決方案，協助品牌快速累積市場即戰力！</p>
+              <div class="nav-drop-link">
+                <ul>
+                  <li>進階方案</li>
+                  <li><a href="/enterprise"><i class="icons-enterprise"></i>企業旗艦方案</a></li>
+                  <li><a href="/cross-border"><i class="icons-cross-border"></i>跨境電商方案</a></li>
+                </ul>
+                <ul>
+                  <li>數位廣告</li>
+                  <li><a href="https://marketing.shoplineapp.com/?utm_source=shopline&utm_medium=shopline-header&utm_campaign=ads-project" target="_blank"><i class="icons-ads-project"></i>廣告計畫方案</a></li>
+                  <li><a href="https://marketing.shoplineapp.com/pages/project-google-ads?utm_source=shopline&utm_medium=shopline-header&utm_campaign=google-project" target="_blank"><i class="icons-google-ads"></i>Google 廣告</a></li>
+                  <li><a href="https://marketing.shoplineapp.com/pages/project-facebook-ads?utm_source=shopline&utm_medium=shopline-header&utm_campaign=facebook-project" target="_blank"><i class="icons-facebook-ads"></i>Facebook 廣告</a></li>
+                  <li><a href="https://marketing.shoplineapp.com/pages/project-line-ads?utm_source=shopline&utm_medium=shopline-header&utm_campaign=line-project" target="_blank"><i class="icons-line-ads"></i>LINE 廣告</a></li>
+                  <li><a href="https://marketing.shoplineapp.com/pages/smart-ads?utm_source=shopline&utm_medium=shopline-feature&utm_campaign=smart-ads" target="_blank"><i class="icons-smart-ads"></i>智慧廣告系統</a></li>
+                </ul>
+                <ul>
+                  <li>功能及產業應用</li>
+                  <li class="is-hidden"><a><i class="icons-payment"></i>金流與物流</a></li>
+                  <li><a href="https://features.shopline.tw/payments" target="_blank"><i class="icons-SL-payments"></i>SHOPLINE Payments</a></li>
+                  <li><a href="https://partneropstw.shoplineapp.com/" target="_blank"><i class="icons-KOL"></i>網紅口碑行銷方案</a></li>
+                  <li><a href="https://consultation.shopline.tw/pos" target="_blank"><i class="icons-retail"></i>實體零售</a></li>
+                  <li><a href="https://features.shopline.tw/instagram-live" target="_blank"><i class="icons-social-commerce"></i>IG 直播 +1</a></li>
+                  <li><a href="https://marketing.shopline.tw/facebook-integration-features" target="_blank"><i class="icons-fb-tool-box"></i>社群電商工具包</a></li>
+                </ul>
+                <ul>
+                  <li>夥伴優惠</li>
+                  <li><a class="new-tag" href="https://marketing.shopline.tw/visa2022" target="_blank"><i class="icons-cross-border"></i>Visa 用戶專享方案</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
+          <li class="list-click"><a>其他資源<i class="icons-arrow-down"></i></a>
+            <nav class="nav-drop-list nav-drop-list-custom">
+              <h3>全通路生態圈服務</h3>
+              <p>SHOPLINE 的願景是打造一個資源豐饒且能互助、互利的生態圈體系，<br>期望我們能有機會成為品牌背後最有力的商務夥伴，陪伴品牌一步步穩健成長、茁壯！</p>
+              <div class="nav-drop-link">
+                <ul>
+                  <li>網店資源</li>
+                  <li><a href="/online-store-setup"><i class="icons-tips"></i>開店秘技</a></li>
+                  <li><a href="/templates"><i class="icons-template"></i>版型主題</a></li>
+                  <li><a href="/faq/overview"><i class="icons-faq"></i>新手問答</a></li>
+                </ul>
+                <ul>
+                  <li>電商知識庫與課程</li>
+                  <li><a href="https://blog.shopline.tw/" target="_blank"><i class="icons-blog"></i>電商教室</a></li>
+                  <li><a href="https://academy.shopline.tw" target="_blank"><i class="icons-workshop"></i>充電工作坊</a></li>
+                  <li><a href="https://stories.shopline.tw" target="_blank"><i class="icons-dreambig"></i>DreamBig 創品牌</a></li>
+                  <li><a href="https://course.shopline.tw/" target="_blank"><i class="icons-webinar"></i>電商成長學苑</a></li>
+                  <li><a href="https://trends.shopline.tw/" target="_blank"><i class="icons-trends"></i>SHOPLINE TRENDS 電商數據庫</a></li>
+                </ul>
+                <ul class="header-video-wrap">
+                  <li>影片專區</li>
+                  <li><a data-video-src="https://s3-ap-southeast-1.amazonaws.com/static.shoplineapp.com/homepage/tw/video/0321Shopline_TW_Final+(1).mp4"><i class="icons-video"></i>90 秒快速了解 SHOPLINE</a></li>
+                  <li><a data-video-src="https://s3-ap-southeast-1.amazonaws.com/static.shoplineapp.com/homepage/tw/video/90+%E7%A7%92%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3+Google+%E5%BB%A3%E5%91%8A%E8%A8%88%E7%95%AB.mp4"><i class="icons-video"></i>90 秒快速了解 Google 廣告計畫</a></li>
+                  <li><a data-video-src="https://plus-shoplineapp-com.s3-ap-southeast-1.amazonaws.com/shopline/%E9%97%9C%E6%96%BCSHOPLINE+%E9%9B%BB%E5%95%86%E6%88%90%E9%95%B7%E5%AD%B8%E8%8B%91.mp4"><i class="icons-video"></i>關於 SHOPLINE 電商成長學苑</a></li>
+                  <li><a data-video-src="https://plus-shoplineapp-com.s3-ap-southeast-1.amazonaws.com/shopline/SHOPLINE+%E6%99%BA%E6%85%A7%E5%BB%A3%E5%91%8A%E7%B3%BB%E7%B5%B1.mp4"><i class="icons-video"></i>SHOPLINE 智慧廣告系統</a></li>
+                </ul>
+              </div>
+            </nav>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-button-group">
+        <a class="bridgewell-btn" href="https://admin.shoplineapp.com/users/sign_up?locale=zh-hant&amp;ref=shopline.tw&amp;" data-capi="signup" data-evnet-section="MainNav" data-event-action="click" id="NavSignupButton" value="start free trial" data-event-label="signup page" target="_blank">免費試用</a>
+        <a class="pad-show" href="https://admin.shoplineapp.com/users/sign_in?locale=zh-hant&amp;">登入網店</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="header-video-popup-wrap">
+  <i class="fa fa-times popup-close"></i>
+  <div>
+    <video src="" autoplay="" controls="" controlslist="nodownload"></video>
+  </div>
+</div>
+
+    <div class="app__content viewport">
+      <div class="header--push"></div>
+      <div id="wrap" class="home-wrap">
+  <section class="home-kv custom-width">
+    <div class="home-kv-info-wrap">
+      <div class="home-content">
+        <h1>想在哪開店創業？<br>
+          <span class="typing-wrap-0">
+            <span class="typing-text"></span><span class="typed-cursor typed-cursor--blink">|</span>
+          </span>
+        </h1>
+        <h2>超過 35 萬品牌使用！從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</h2>
+        <form class="form-wrapper" onsubmit="return freeTrialsubmit()">
+          <label>
+            <input class="input-email" type="email" placeholder="請在此輸入電子信箱 (可隨時更換)" required="">
+          </label>
+          <button type="submit" value="StartFreeTrial" data-evnet-page="homepage" data-evnet-section="hero img" data-event-action="email signup" id="emailSignupButton" data-event-label="email signup">免費試用</button>
+        </form>
+      </div>
+    </div>
+    <div class="kv-img-animate">
+      <picture class="show-0">
+        <!-- webp -->
+        <source media="(min-width: 320px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1010x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/505x.webp?source_format=png 1x" />
+        <source media="(min-width: 601px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1260x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/630x.webp?source_format=png 1x" />
+        <source media="(min-width: 768px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1840x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/920x.webp?source_format=png 1x" />
+        <source media="(min-width: 992px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1060x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/540x.webp?source_format=png 1x" />
+        <source media="(min-width: 1121px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1600x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/800x.webp?source_format=png 1x" />
+        <!-- don't support webp -->
+        <source media="(min-width: 320px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1010x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/505x.png?source_format=png 1x" />
+        <source media="(min-width: 601px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1260x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/630x.png?source_format=png 1x" />
+        <source media="(min-width: 768px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1840x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/920x.png?source_format=png 1x" />
+        <source media="(min-width: 992px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1060x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/540x.png?source_format=png 1x" />
+        <source media="(min-width: 1121px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/1600x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/800x.png?source_format=png 1x" />
+        <img srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/505x.webp?source_format=png 320w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/630x.webp?source_format=png 601w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/920x.webp?source_format=png 768w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/540x.webp?source_format=png 992w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/800x.webp?source_format=png 1121w" sizes="(min-width: 320px) 504px, (min-width: 601px) 627px, (min-width: 768px) 921px, (min-width: 992px) 535px (min-width: 1121px) 770px," src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397379490003b0c2bf8/510x.webp?source_format=png" width="770" height="583" alt="SHOPLINE 網路開店">
+      </picture>
+      <picture class="show-1">
+        <!-- webp -->
+        <source media="(min-width: 320px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1010x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/505x.webp?source_format=png 1x" />
+        <source media="(min-width: 601px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1260x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/630x.webp?source_format=png 1x" />
+        <source media="(min-width: 768px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1840x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/920x.webp?source_format=png 1x" />
+        <source media="(min-width: 992px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1060x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/540x.webp?source_format=png 1x" />
+        <source media="(min-width: 1121px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1600x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/800x.webp?source_format=png 1x" />
+        <!-- don't support webp -->
+        <source media="(min-width: 320px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1010x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/505x.png?source_format=png 1x" />
+        <source media="(min-width: 601px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1260x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/630x.png?source_format=png 1x" />
+        <source media="(min-width: 768px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1840x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/920x.png?source_format=png 1x" />
+        <source media="(min-width: 992px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1060x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/540x.png?source_format=png 1x" />
+        <source media="(min-width: 1121px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/1600x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/800x.png?source_format=png 1x" />
+        <img srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/505x.webp?source_format=png 320w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/630x.webp?source_format=png 601w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/920x.webp?source_format=png 768w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/540x.webp?source_format=png 992w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/800x.webp?source_format=png 1121w" sizes="(min-width: 320px) 504px, (min-width: 601px) 627px, (min-width: 768px) 921px, (min-width: 992px) 535px (min-width: 1121px) 770px," src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b3978460a6001735d333/510x.webp?source_format=png" width="770" height="583" alt="SHOPLINE 社群購物">
+      </picture>
+      <picture class="show-2">
+        <!-- webp -->
+        <source media="(min-width: 320px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1010x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.webp?source_format=png 1x" />
+        <source media="(min-width: 601px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1260x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/630x.webp?source_format=png 1x" />
+        <source media="(min-width: 768px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1840x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/920x.webp?source_format=png 1x" />
+        <source media="(min-width: 992px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1060x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/540x.webp?source_format=png 1x" />
+        <source media="(min-width: 1121px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1600x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/800x.webp?source_format=png 1x" />
+        <!-- don't support webp -->
+        <source media="(min-width: 320px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1010x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.png?source_format=png 1x" />
+        <source media="(min-width: 601px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1260x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/630x.png?source_format=png 1x" />
+        <source media="(min-width: 768px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1840x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/920x.png?source_format=png 1x" />
+        <source media="(min-width: 992px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1060x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/540x.png?source_format=png 1x" />
+        <source media="(min-width: 1121px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/1600x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/800x.png?source_format=png 1x" />
+        <img srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.webp?source_format=png 320w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/630x.webp?source_format=png 601w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/920x.webp?source_format=png 768w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/540x.webp?source_format=png 992w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/800x.webp?source_format=png 1121w" sizes="(min-width: 320px) 504px, (min-width: 601px) 627px, (min-width: 768px) 921px, (min-width: 992px) 535px (min-width: 1121px) 770px," src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/510x.webp?source_format=png" width="770" height="583" alt="SHOPLINE POS 系統">
+      </picture>
+    </div>
+  </section>
+  <section class="home-intro home-intro-b">
+    <div class="intro-title">
+      <h2>單一平台就能助你<br>在全通路輕鬆開店創業</h2>
+      <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，<br>並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！</p>
+    </div>
+    <div class="home-intro-box">
+      <div class="home-content">
+        <h3>免寫程式、多款版型<br>輕鬆打造全能電商網站</h2>
+          <div class="icons-wave"><i class="icons-wave"></i></div>
+          <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+          <ul>
+            <li>豐富版型主題與字型搭配</li>
+            <li>RWD 響應式網頁設計</li>
+            <li>獨有網址 ＆ SSL 安全憑證</li>
+            <li>SEO 搜尋引擎優化</li>
+            <li>一頁商店</li>
+            <li>開放 HTML／CSS 編輯</li>
+          </ul>
+          <div class="home-btn-wrap">
+            <a href="/online-store-setup" class="hover-arrow-effect" data-evnet-page="homepage" data-evnet-section="build store" data-event-action="click" id="text-link-1" data-event-label="online store setup">看看開店祕技<i class="link-arrow"></i></a>
+          </div>
+      </div>
+      <div class="home-img">
+        <picture>
+          <!-- webp -->
+          <source media="(min-width: 320px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1130x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png 1x" />
+          <source media="(min-width: 601px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1460x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/730x.webp?source_format=png 1x" />
+          <source media="(min-width: 768px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1850x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/925x.webp?source_format=png 1x" />
+          <source media="(min-width: 992px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1060x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/540x.webp?source_format=png 1x" />
+          <source media="(min-width: 1121px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1410x.webp?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/705x.webp?source_format=png 1x" />
+          <!-- don't support webp -->
+          <source media="(min-width: 320px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1130x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.png?source_format=png 1x" />
+          <source media="(min-width: 601px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1460x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/730x.png?source_format=png 1x" />
+          <source media="(min-width: 768px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1850x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/925x.png?source_format=png 1x" />
+          <source media="(min-width: 992px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1060x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/540x.png?source_format=png 1x" />
+          <source media="(min-width: 1121px)" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/1410x.png?source_format=png 2x, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/705x.png?source_format=png 1x" />
+          <img class="lazy" srcset="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png 320w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/730x.webp?source_format=png 601w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/540x.webp?source_format=png 768w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/540x.webp?source_format=png 992w, https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/705x.webp?source_format=png 1121w" sizes="(min-width: 320px) 560px, (min-width: 601px) 727px, (min-width: 768px) 921px, (min-width: 992px) 535px (min-width: 1121px) 700px," data-src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/280x.webp?source_format=png" width="700" height="411" alt="免寫程式、多款版型 在全通路輕鬆開店創業">
+        </picture>
+      </div>
+    </div>
+    <div class="home-intro-box">
+      <div class="home-content">
+        <h3>支持海內外電商<br>金流、物流一次搞定</h2>
+          <div class="icons-wave"><i class="icons-wave"></i></div>
+          <p>支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送貨服務，加速消費者完成下單交易，大幅降低購物車放棄率！</p>
+          <ul>
+            <li>線上信用卡刷卡</li>
+            <li>第三方金流／行動支付整合</li>
+            <li>超商代碼／條碼繳費</li>
+            <li>多溫層宅配並指定運費</li>
+            <li>超商／宅配貨到付款</li>
+            <li>發票開立與串接</li>
+          </ul>
+          <div class="home-btn-wrap">
+            <a href="/features/online-store#payments-and-shipping" class="hover-arrow-effect" data-evnet-page="homepage" data-evnet-section="payment and shipping" data-event-action="click" id="text-link-2" data-event-label="features">了解更多金物流<i class="link-arrow"></i></a>
+          </div>
+      </div>
+      <div class="home-img">
+        <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/60a4d354a8bff100235bea59/original.png?1621414740" alt="支持海內外電商 金流、物流一次搞定" width="700" height="411">
+      </div>
+    </div>
+    <div class="home-intro-box">
+      <div class="home-content">
+        <h3>刺激下單，創造回購<br>行銷導流、促購模組任你玩</h2>
+          <div class="icons-wave"><i class="icons-wave"></i></div>
+          <p>多元優惠活動、會員集客機制、網紅分潤以及直播購物等豐富功能，將電商行銷玩法一網打盡，助你成功優化行銷活動成效，刺激顧客下單、吸引鐵粉回購！</p>
+          <ul>
+            <li>超過 20 種優惠促銷功能</li>
+            <li>社群直播購物系統</li>
+            <li>會員分級／點數／購物金</li>
+            <li>Facebook／Google／LINE 廣告追蹤</li>
+            <li>Instagram 購物功能</li>
+            <li>Facebook／Instagram／LINE 對話式購物</li>
+          </ul>
+          <div class="home-btn-wrap">
+            <a href="/features/online-store#promotion" class="hover-arrow-effect" data-evnet-page="homepage" data-evnet-section="promotion" data-event-action="click" id="text-link-3" data-event-label="features">看更多優惠模組<i class="link-arrow"></i></a>
+          </div>
+      </div>
+      <div class="home-img">
+        <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/60a4d354df356c0012a8a223/original.png?1621414740" alt="刺激下單，創造回購 行銷導流、促購模組任你玩" width="700" height="411">
+      </div>
+    </div>
+    <div class="home-intro-box">
+      <div class="home-content">
+        <h3>O2O 全通路無縫整併<br>輕鬆管理網店、門市以及其他通路</h2>
+          <div class="icons-wave"><i class="icons-wave"></i></div>
+          <p>不論是網店拓展門市，還是門市想發展網路生意，從商品、庫存、訂單等各項虛實店舖的資料都能完善整併，輕鬆實現全通路會員經營到多店營運。</p>
+          <ul>
+            <li>門市 POS 系統</li>
+            <li>線上線下會員／商品／庫存整合</li>
+            <li>門市快速集客工具</li>
+            <li>O2O 即時銷售報表分析</li>
+            <li>進銷庫存／調撥／多店管理</li>
+            <li>串接 Shopee 蝦皮購物庫存 </li>
+          </ul>
+          <div class="home-btn-wrap">
+            <a href="/features/online-store#multi-channels" class="hover-arrow-effect" data-evnet-page="homepage" data-evnet-section="multi channel" data-event-action="click" id="text-link-4" data-event-label="features">了解更多全通路整合<i class="link-arrow"></i></a>
+          </div>
+      </div>
+      <div class="home-img">
+        <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/60a4d3540289ef002f2150cb/original.png?1621414740" alt="O2O 全通路無縫整併 輕鬆管理網店、門市以及其他通路" width="700" height="411">
+      </div>
+    </div>
+  </section>
+  <section class="home-features custom-width">
+    <h2>更多功能與服務</h2>
+    <ul class="features-list">
+      <li>
+        <div class="img-wrap">
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5efef5c3b774cf002ab000ce/original.png?1593767363" alt="強大庫存及訂單系統" width="72" height="70">
+        </div>
+        <h3>強大庫存及訂單系統</h3>
+        <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+      </li>
+      <li>
+        <div class="img-wrap">
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5efef5c4b774cf0027b00084/original.png?1593767364" alt="即時化商店業績分析" width="72" height="70">
+        </div>
+        <h3>即時化商店業績分析</h3>
+        <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>
+      </li>
+      <li>
+        <div class="img-wrap">
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5f34a2e10225e00039a716b9/original.png?1597285089" alt="多國語系、幣值切換" width="72" height="70">
+        </div>
+        <h3>多國語系、幣值切換</h3>
+        <p>想做跨境電商也ＯＫ！提供語言、幣別、稅金等進階功能，友善應對海外消費需求。</p>
+      </li>
+      <li>
+        <div class="img-wrap">
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5f34a2e11468c4003c7aace6/original.png?1597285089" alt="專業顧問線上支援" width="72" height="70">
+        </div>
+        <h3>專業顧問線上支援</h3>
+        <p>迅速、透明的溝通管道，協助你快速解決從線上到線下、從在地到海外的網店疑難。</p>
+      </li>
+      <li>
+        <div class="img-wrap">
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5f34a2e11468c472e47aa8e9/original.png?1597285089" alt="廣告行銷加值服務" width="72" height="70">
+        </div>
+        <h3>廣告行銷加值服務</h3>
+        <p>由官方認證的專業投手團隊，協助品牌投遞 Facebook、Google、LINE 等廣告。</p>
+      </li>
+      <li>
+        <div class="img-wrap">
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5f34a2e16200760045e6138f/original.png?1597285089" alt="老闆專屬成長社群" width="72" height="70">
+        </div>
+        <h3>老闆專屬成長社群</h3>
+        <p>致力為品牌店家打造能深度交流且互助的生態體系，是拓展人脈、商機的絕佳場域。</p>
+      </li>
+    </ul>
+  </section>
+  <section class="home-showcase custom-width">
+    <h4><span>人氣品牌</span>一致推薦使用</h4>
+    <div class="showcase-list-wrap">
+      <ul class="showcase-list">
+        <li>
+          <div class="home-content">
+            <a class="hover-arrow-effect" href="https://www.bonnyread.com.tw/" target="_blank">bonnyread.com.tw<i class="link-arrow"></i></a>
+            <p>SHOPLINE 在行動裝置上操作的順暢度很高；使用者給的建議與意見會採納，處理的速度也不錯；還一直有新功能推出，不斷成長。</p>
+            <span>- BONNY & READ 店長, Stan</span>
+          </div>
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5f06bed2436e2b86c4471215/original.jpg?1594277585" alt="Bonny & Read" width="873" height="340">
+        </li>
+        <li>
+          <div class="home-content">
+            <a class="hover-arrow-effect" href="https://www.tuanyuannuts.com/" target="_blank">tuanyuannuts.com<i class="link-arrow"></i></a>
+            <p>SHOPLINE 的 UI、UX 做得很好，保有能自行調整的彈性；《 電商教室 Blog 》也對我幫助很大，按照裡頭分享的 SEO 攻略本去優化商店設定 ，搜尋排名真的可以不斷上升！</p>
+            <span>- 團圓堅果 店長, Samuel</span>
+          </div>
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5f06bed2f66c13003f4645e1/original.jpg?1594277585" alt="團圓堅果" width="873" height="340">
+        </li>
+        <li>
+          <div class="home-content">
+            <a class="hover-arrow-effect" href="https://www.snatch-store.com/" target="_blank">snatch-store.com<i class="link-arrow"></i></a>
+            <p>SHOPLINE 的系統在商品下、上架方便是我最喜歡的部份，跟客服聯絡能馬上獲得協助，也是非常重要的環節。</p>
+            <span>- SNATCH 店長, Daddi</span>
+          </div>
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5f06bed2fed18d002ae662d4/original.jpg?1594277585" alt="SNATCH" width="873" height="340">
+        </li>
+        <li>
+          <div class="home-content">
+            <a class="hover-arrow-effect" href="https://www.xuxuwear.com.tw/" target="_blank">xuxuwear.com.tw<i class="link-arrow"></i></a>
+            <p>SHOPLINE 在行銷模組方面非常多元，在功能上不會碰到優惠設定『打架』的情形，同時商店版型較為簡潔、乾淨，在後台操作上也比較直觀。</p>
+            <span>- 許許兒 品牌主理人 阿南</span>
+          </div>
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/61765aa680fa4a0014ed5ac0/original.png?1635146405" alt="許許兒" width="873" height="340">
+        </li>
+        <li>
+          <div class="home-content">
+            <a class="hover-arrow-effect" href="https://www.naturefruittw.com/" target="_blank">naturefruittw.com<i class="link-arrow"></i></a>
+            <p>使用 SHOPLINE 像請了 24 小時的員工可以不停地接單，省去了本來需要人工紀錄的金流、物流作業，我們有更多的時間可以專心做出更好的產品。</p>
+            <span>- 淡果香 店長, Roy ＆ Boyeong</span>
+          </div>
+          <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/5f06bed2baaa600027cd8328/original.jpg?1594277585" alt="淡果香" width="873" height="340">
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+    </div>
+
+    <!-- footer -->
+      <footer class="footer-revamp">
+  <div class="footer-map count-animation">
+    <div class="footer-content custom-width">
+      <h4>全亞洲超過<br><span class="count-animate">350,000</span> 個品牌都在使用 SHOPLINE</h4>
+      <a class="hover-arrow-effect count-animation-view bridgewell-btn" href="https://admin.shoplineapp.com/users/sign_up?locale=zh-hant&amp;ref=shopline.tw&amp;" data-capi="signup" data-evnet-section="footer" data-event-action="signup" id="footer-signup-button" data-event-label="signup page" target="_blank"><span>免費試用 14 天</span><i class="link-arrow"></i></a>
+    </div>
+    <div class="footer-map-img">
+      <div class="map-place-icon sparkle"></div>
+      <div class="map-place-icon"></div>
+      <div class="map-place-icon"></div>
+      <div class="map-place-icon"></div>
+      <div class="map-place-icon"></div>
+      <div class="map-place-icon"></div>
+      <div class="map-place-icon map-place-icon-main"></div>
+      <img class="lazy" width="615" height="310" data-src="https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820" alt="">
+    </div>
+  </div>
+  <div class="footer-list-wrap custom-width">
+    <div class="footer-col">
+      <h4>SHOPLINE</h4>
+      <ul class="footer-nav">
+        <li class="nav-item"><a class="nav-link" href="/about">關於我們</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/team">認識團隊</a></li>
+        <li class="nav-item"><a class="nav-link" href="/careers">人才招募</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cooperate">合作機會</a></li>
+        <li class="nav-item"><a class="nav-link" href="/selectedpartners">精選夥伴</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/press">媒體報導</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>我要開店</h4>
+      <ul class="footer-nav">
+        <li class="nav-item"><a class="nav-link" href="/about/pricing">方案費用</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/pricing/module">功能模組</a></li>
+        <li class="nav-item"><a class="nav-link" href="/showcase">客戶案例</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://seminar.shopline.tw" target="_blank">開店說明會</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://consultation.shopline.tw/" target="_blank">開店諮詢</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>功能特色</h4>
+      <ul class="footer-nav">
+        <li class="nav-item"><a href="/features/online-store" class="nav-link">網路開店</a></li>
+        <li class="nav-item"><a href="/social-commerce/features" class="nav-link">社群購物</a></li>
+        <li class="nav-item"><a class="nav-link" href="/pos/features">零售 POS</a></li>
+        <li class="nav-item"><a class="nav-link" href="/features/online-store-builder">網路商店</a></li>
+        <li class="nav-item"><a class="nav-link" href="/features/web-building">網站製作</a></li>
+        <li class="nav-item"><a class="nav-link" href="/features/logistics">電商物流</a></li>
+        <li class="nav-item"><a class="nav-link" href="/features/order-management">訂單管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="/features/landing-page">一頁商店</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>開店資源</h4>
+      <ul class="footer-nav">
+        <li class="nav-item"><a class="nav-link" href="/online-store-setup">開店秘技</a></li>
+        <li class="nav-item"><a class="nav-link" href="/templates">版型主題</a></li>
+        <li class="nav-item"><a class="nav-link" href="/faq/overview">新手問答</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://pos.shopline.tw/functioncase/hardware/" target="_blank">POS 硬體</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://blog.shopline.tw/shopline-feature-instruction/" target="_blank">最新功能</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>更多解決方案</h4>
+      <ul class="footer-nav">
+        <li class="nav-item"><a class="nav-link" href="/enterprise">企業旗艦方案</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cross-border">跨境電商方案</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://marketing.shoplineapp.com/?utm_source=shopline&utm_medium=shopline-footer&utm_campaign=ads-project" target="_blank">廣告計畫方案</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>其他資源</h4>
+      <ul class="footer-nav">
+        <li class="nav-item"><a class="nav-link" href="https://blog.shopline.tw/" target="_blank">電商教室</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://academy.shopline.tw" target="_blank">充電工作坊</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://stories.shopline.tw/" target="_blank">DreamBig 創品牌</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://course.shopline.tw/" target="_blank">電商成長學苑</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://trends.shopline.tw/" target="_blank">SHOPLINE TRENDS 電商數據庫</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://partners.shopline.tw/line-account" target="_blank">LINE 官方帳號</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>應用案例</h4>
+      <ul class="footer-nav">
+        <li class="nav-item is-hidden"><a class="nav-link">金流與物流</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://features.shopline.tw/payments" target="_blank">SHOPLINE Payments</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://partneropstw.shoplineapp.com/" target="_blank">網紅口碑行銷方案</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://consultation.shopline.tw/pos" target="_blank">實體零售</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://features.shopline.tw/instagram-live" target="_blank">IG 直播 +1</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://marketing.shopline.tw/facebook-integration-features" target="_blank">社群電商工具包</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-col-full">
+      <div class="covid-19-wrap">
+        <a href="https://marketing.shopline.tw/covid-19-response" target="_blank">COVID-19 應變措施</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-wrap custom-width">
+    <div class="footer-siteinfo footer-siteinfo-link">
+      <ul class="nav nav-siteinfo">
+        <li class="nav-item"><a class="nav-link" href="/about/sitemap">網站地圖</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/privacy">隱私權政策</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/terms">會員條款</a></li>
+      </ul>
+    </div>
+    <div class="footer-siteinfo footer-siteinfo-social">
+      <div class="button-group">
+        <a href="https://www.facebook.com/shopline.tw" target="_blank">
+          <div class="icons-facebook"></div>
+        </a>
+        <a href="https://www.linkedin.com/company/shopline" target="_blank">
+          <div class="icons-linkedin"></div>
+        </a>
+        <a href="https://www.instagram.com/shopline_tw/" target="_blank">
+          <div class="icons-instagram"></div>
+        </a>
+        <a href="https://www.youtube.com/c/shoplineglobalsmartcommerceenabler" target="_blank">
+          <div class="icons-youtube"></div>
+        </a><br>
+        <a href="https://line.me/R/ti/p/%40prs5793t" target="_blank">
+          <div class="icons-brand"></div>
+        </a>
+        <a href="mailto: support@shoplineapp.com">
+          <div class="icons-mail"></div>
+        </a>
+      </div>
+    </div>
+    <div class="footer-siteinfo footer-siteinfo-copyright">
+      <div class="copyright">服務時間 星期一至五 上午 10 點至晚上 7 點<br>© Copyright 2013-22 SHOPLINE Limited.</div>
+    </div>
+  </div>
+  <div class="footer-lang-wrap pad-show custom-width">
+    <div class="lang--switch">
+      
+<div class="btn-group dropdown">
+  <button class="dropdown-toggle btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"><i class="icons-lang"></i><span class="lang-wording pad-show">台灣 (中文)</span></button>
+  <div class="dropdown-menu">
+      <a href="https://shopline.tw/" class="dropdown-item is-active">台灣 (中文)</a>
+      <a href="https://shopline.hk/" class="dropdown-item">香港 (中文)</a>
+      <a href="https://shopline.hk/en/" class="dropdown-item">Hong Kong (ENG)</a>
+      <a href="https://shoplineapp.sg/" class="dropdown-item">Singapore (ENG)</a>
+      <a href="https://shopline.my/zh-hans/" class="dropdown-item">马来西亚 (中文)</a>
+      <a href="https://shopline.my/" class="dropdown-item">Malaysia (ENG)</a>
+      <a href="https://shopline.ph/" class="dropdown-item">Philippines (ENG)</a>
+      <a href="https://shopline.com.vn/" class="dropdown-item">Tiếng Việt</a>
+      <a href="https://shopline.co.th/" class="dropdown-item">ภาษาไทย</a>
+      <a href="https://shoplineapp.com/" class="dropdown-item">Global</a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</footer>
+  </div>
+
+      <div class="custom-banner banner-top">
+        <i class="btn-close-banner"></i>
+        <a class="btn-close-banner" href="https://seminar.shopline.tw/?utm_medium=exit-recovery&utm_campaign=push-q3promo&utm_source=website-tw" target="_blank">
+          <span class="show-pc">你開業，我補貼！價值超過 10 萬補助與您齊心抗疫 👉</span>
+          <span class="show-mobile">價值超過 10 萬開店補助與您齊心抗疫 👉</span>
+        </a>
+      </div>
+  <div class="custom-banner banner-left-bottom">
+    <i class="btn-close-banner"></i>
+    <div class="banner-center-content">
+      <div class="banner-content">
+        <h2>開店有疑問？</h2>
+        <p>與 SHOPLINE 開店顧問進行一對一免費電話諮詢 GO！</p>
+      </div>
+      <div class="banner-btn-wrap">
+        <a href="https://consultation.shopline.tw/?utm_medium=exit-recovery&utm_campaign=homepage:tw:push-consultation:facepop:B&utm_source=website-tw" target="_blank">馬上免費預約！</a>
+      </div>
+      <img class="lazy" data-src="https://img.shoplineapp.com/media/image_clips/62021b625dd25500115b6686/original.png?1644305249" alt="SHOPLINE 開店顧問">
+    </div>
+  </div>
+
+
+  <script src="https://dt9jl8a7gc9zr.cloudfront.net/assets/application-33dfd6d5e6a94734c6973c6e0b1fd83d47cafdbc7dbdb2352a78ca8bd01d5a75.js"></script>
+  <script src="https://dt9jl8a7gc9zr.cloudfront.net/assets/home/pages/banner-52c1384416ebbd0104ab8437d598d4d451ba324024540ee19ad3df35b8401118.js"></script>
+
+  <!-- include js by controller and action -->
+  <!-- ep index -->
+    <script src="https://dt9jl8a7gc9zr.cloudfront.net/assets/lib/owl.carousel-70b2756259f94277bf31f8d580a7203e1aef7a8c3e904035287e10ebfe626532.js"></script>
+    <script src="https://dt9jl8a7gc9zr.cloudfront.net/assets/pages/home-bd3b709221b8f8ba78bcce48d2877604766b3da7ce6fce0f8c43b9c2fe8ae001.js"></script>
+</body>
+</html>
