@@ -168,14 +168,14 @@
         .group8{
             width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             border: #000 solid 1px;
             
         }
         .col8{
-            margin: auto;
+            width: 1200px;
+            flex-direction: row;
             /* justify-items: right; */
-            justify-self: flex-start;
             /* justify-items: flex-start; */
             /* flex-direction: row; */
             /* justify-content: start; */
@@ -184,11 +184,9 @@
             /* flex-direction: row-reverse; */
         }
         .group8one{
+            width: 400px;
+            border: #000080 solid 1px;
             text-align: center;
-        }
-        .group8two{
-            width: 100%;
-            justify-items:left;
         }
     </style>
 </head>
@@ -367,8 +365,8 @@
         <!-- 第九個版面     -->
         <div class="group8">
             <div class="col8"> 
-                    <div class="group8one"><h1>更多功能與服務</h1></div>
-                        <div class="group8two">
+                    <div class="group8one">
+                            <h1>更多功能與服務</h1>
                             <img src="https://img.shoplineapp.com/media/image_clips/5efef5c3b774cf002ab000ce/original.png?1593767363">
                             <h1>強大庫存及訂單系統</h1>
                             <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
@@ -376,7 +374,7 @@
                             <img src="https://picsum.photos/300/200/?random=10">
                             <h1>即時化商店業績分析</h1>
                             <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>    
-                        </div>
+                        
                         <!-- <img src="https://img.shoplineapp.com/media/image_clips/5efef5c3b774cf002ab000ce/original.png?1593767363">
                         <h1>強大庫存及訂單系統</h1>
                         <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
@@ -400,6 +398,7 @@
                         <img src="https://picsum.photos/300/200/?random=10">
                         <h1>強大庫存及訂單系統</h1>
                         <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+                    </div>
             </div>
         </div>
 </body>

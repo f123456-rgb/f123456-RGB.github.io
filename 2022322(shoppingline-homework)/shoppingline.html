@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/30ad28d491.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="shoppingline.css"> -->
+</head>
+<header>
+    <style>
+        /* 最上面區塊 */
+        .header-top{
+                width: 100%;
+                display: flex;
+                border: none ;
+                background-color: #000080;
+                color: white;
+                justify-content: flex-end;
+                top: 30px;
+                left: 0px; 
+            }
+        .header-top a{
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 35px;
+            padding: 0 10px;
+        } 
+        .header-top a:hover{
+            color: blue;
+        } 
+        /* 導覽介紹區塊  */
+        .header{
+            display: flex;
+            width: 100%;
+            height: 60px;
+            /* margin: auto; */
+            border: none;
+            background-color: #fff;
+            justify-content: space-evenly; 
+        }
+        .header .logo img{
+            width: 150px;
+            height: 28px;
+                /*  上   右   下   左 */
+            margin: 18px 50px 18px 110px;
+        }
+        .header nav{
+            /* display: flex;
+            justify-content: space-evenly; */
+            text-align: justify;
+        }
+        .header nav a{
+            font-size: 15px;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+                    /* 上   下 */
+            margin: 21px 10px;
+        }
+        .header nav a:hover{
+            color:blue;
+        }
+        .header .buttom{
+            display: inline-block;
+            width:  80px;
+            height: 30px;
+            background-color: blue;
+            border-radius: 100px;
+            text-align: center;
+            padding: 5px 17px;
+            margin: 10px 0px 10px 350px;
+        }
+        .header .button a{
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            line-height: 30px;
+        }
+        .header a:hover{
+            opacity: 70%;
+        }
+        /* 輸入信箱與最大區塊圖片 */
+        .bigpictureblock{
+            width: 100%;
+            /* height: 10cm; */
+            display: flex;
+            border: 2px solid #000080;
+            background-color: #000080;
+        }
+        .bigpictureblock img{
+            justify-content: flex-end;
+        }
+        .bigpictureblock text{
+            font-size: 30px;
+        }
+
+        /* 只有字的區塊 */
+        .texttext{
+            width: 550px;
+            text-align: center;
+            margin: auto;
+        }
+        .texttext h2{
+            font-size: 35px;
+            font-weight: bold;
+            margin: 50px;
+        }
+        .texttext p{
+            font-size: 16px;
+            line-height: 200%;
+        }
+        .group{
+            width: 1200px;
+            margin: auto;
+            
+        }
+        .row{
+            display: flex;
+            margin-bottom: 50px;
+            flex-direction: row-reverse;
+        }
+        .row .pic{
+            width: 448px;
+            padding: 100px 0px;
+        }
+        .row .pic .img{
+            width: 100%;
+        }
+        .row .LefttextRightpicture{
+            width: 672px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .row .LefttextRightpicture h3{
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 150%;
+        }
+        .row .LefttextRightpicture p{
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 200%;
+        }
+
+
+        .list{
+            display: flex;
+            width: 700px;
+            font-size: 17px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .list li{
+            width: 350px;
+            margin-bottom: 10px;
+        }
+        </style>
+</header>
+
+
+
+
+<body>
+    <!-- 最上面區塊 -->
+    <div class="header-top">
+        <div class="header-t0pone">
+            <i class="fa-solid fa-globe"></i>
+            <a href="#">幫助中心</a>
+            <a href="#">登入網店</a> 
+        </div>     
+    </div>
+    <!-- 導覽區壞介紹 -->
+    <div class="header">
+        <a href="#" class="logo"><img src="https://img.shoplineapp.com/media/image_clips/60811bb98a60d74a03808d4d/original.png?1619073977" alt=""></a>
+        <nav>
+            <a href="#"> <p>開店服務</p> </a>
+            <a href="#"> <p>方案費用</p> </a>
+            <a href="#"> <p>客戶案例</p> </a>
+            <a href="#"> <p>開店說明會</p> </a>
+            <a href="#"> <p>開店查詢</p> </a>
+            <a href="#">  <p>更多解決方案</p> </a>
+            <a href="#">  <p>其他資源</p>  </a>
+        </nav>
+        <div class="buttom">
+            <a href="#">免費試用</a>
+        </div>
+    </div>
+    <!-- 輸入信箱與最大圖片區塊 -->
+    <div class="bigpictureblock">
+        <div class="text">
+            <h1>想在哪開店創業？<br></h1>
+            <h1 class="special">門市必備零售POS系統|</h1>
+            <p>超過 35 萬品牌使用！從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</p>
+            <input type="text" placeholder="請在此輸入點子信箱(可隨時更換)" name="" id="email">
+            <a href="#">免費試用</a>
+        </div>
+        <div class="pic">
+            <img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.webp?source_format=png" alt="">
+        </div>
+    </div>
+    <!-- 只有字的區塊 -->
+    <div class="texttext">
+            <h2>單一平台就能助你 <br>
+                在全通路輕鬆開店創業</h2>
+            <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，
+                並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好
+            </p>
+    </div>
+    <!-- 左文右圖 -->
+    <div class="group">
+        <div class="row">
+            <div class="pic">
+                <img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png">
+            
+            </div>
+            <div class="LefttextRightpicture">
+                <h3>免寫程式、多款版型 <br>
+                輕鬆打造全能電商網站</h3>
+                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設 <br> 計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+                <div class="listodd">
+                    <ul>
+                        <li>豐富版型主題與字型搭配</li>
+                        <li>獨有網址 ＆ SSL 安全憑證</li>
+                        <li>一頁商店</li>
+                    </ul>
+                </div>        
+                <div class="listevent">
+                <ul>
+                    <li>看看開店祕技</li>
+                    <li>RWD 響應式網頁設計</li>
+                    <li>SEO 搜尋引擎優化</li>
+                    <li>開放 HTML／CSS 編輯</li>
+                </ul>  
+                </div>            
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
