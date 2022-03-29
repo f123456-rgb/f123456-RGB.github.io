@@ -1,0 +1,463 @@
+ /* 操控樂趣  */
+.control-fun{
+    color: white;
+    /* border: 1px solid red; */
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.gray-block{
+    width: 320px;
+    height: 200px;
+    background-color: gray;
+    position: absolute;
+    left: 380px;
+    top: -50px;
+}
+.car{
+    /* border: 1px solid red; */
+    position: relative;
+    left: 250px;
+    bottom: -150px;
+}
+.car img{
+    position: relative;
+}
+.button{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    font-size: 50px;
+}
+.button a{
+    color: red;
+}
+.control-fun-block{
+    width: 300px;
+    /* border: 1px solid green; */
+    position: relative;
+    left: -150px;
+    bottom: 450px;
+}
+.control-fun-red-block{
+    background-color: red;
+    font-size: 40px;
+}
+.control-fun-red-block span{
+    font-size: 80px;
+    writing-mode: vertical-lr;
+}
+.text{
+    background-color: black;
+    padding: 15px;
+    font-size: 20px;
+    
+}
+.list{
+    width: 620px;
+    /* border: 1px solid purple; */
+    padding: 18px;
+    position: relative;
+    bottom: 280px;
+    right: 115px;
+    background-color: whitesmoke;
+}
+.list .li .li-red{
+    color: red;
+} 
+.li-red span{
+    line-height: 2;
+}
+.li-block{
+    width: 90px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-block-two{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-block-three{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-li{
+    color: #000;
+    margin-top: 10px;
+}
+/* 安全守護 */
+.security-guard{
+    width: 1200px;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+.gray-block-two{
+    width: 400px;
+    height: 380px;
+    background-color: gray;
+    position: absolute;
+    left: 250px;
+    top: -50px;
+}
+.security{
+    /* border: 5px solid red; */
+    position: relative;
+    left: 100px;
+    bottom: -50px;
+}
+.security img{
+    position: relative;
+}
+.button-two{
+    position: absolute;
+    top: 180px;
+    left: -10px;
+    font-size: 50px;
+}
+.button-two a{
+    color: red;
+}
+.security-guard-block{
+    width: 300px;
+    text-align: end;
+    /* border: 1px solid green; */
+    position: relative;
+    left: 550px;
+    bottom: 490px;
+}
+.security-guard-red-block{
+    background-color: red;
+    font-size: 40px;
+    color: white;
+}
+.security-guard-red-block span{
+    font-size: 80px;
+    writing-mode: vertical-lr;
+}
+.text{
+    background-color: black;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    text-align:justify;
+}
+.text h2{
+    font-size: 24px;
+    margin-top: 5px;
+}
+.text p{
+    margin-top: 5px;
+}
+.list-two{
+    width: 620px;
+    padding: 18px;
+    background-color:whitesmoke;
+    position: relative;
+    bottom: 250px;
+    right: -230px;
+}
+.list-two .li .li-red{
+    color: red;
+} 
+.li-red span{
+    line-height: 2;
+}
+.li-block{
+    width: 90px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.li-block-two{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* 乘坐舒適 */
+.comfortable-ride{
+    color: white;
+    /* border: 1px solid red; */
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.gray-block-three{
+    width: 320px;
+    height: 200px;
+    background-color: gray;
+    position: absolute;
+    left: 380px;
+    top: -50px;
+}
+.comfortable{
+    /* border: 1px solid red; */
+    position: relative;
+    left: 250px;
+    bottom: 150px;
+}
+.comfortable img{
+    position: relative;
+}
+.button-three{
+    position: absolute;
+    top: 180px;
+    left: 480px;
+    font-size: 50px;
+}
+.button-three a{
+    color: red;
+}
+.comfortable-ride-block{
+    width: 300px;
+    border: 1px solid green;
+    position: relative;
+    left: -150px;
+    bottom: 450px;
+}
+.comfortable-ride-red-block{
+    background-color: red;
+    font-size: 40px;
+}
+.comfortable-ride-red-block span{
+    font-size: 80px;
+    writing-mode: vertical-lr;
+}
+.text{
+    background-color: black;
+    padding: 15px;
+    font-size: 20px;
+    
+}
+.list-three{
+    width: 620px;
+    /* border: 1px solid wheat; */
+    padding: 18px;
+    position: relative;
+    bottom: 280px;
+    right: 115px;
+    background-color:whitesmoke;
+}
+.list-three .li .li-red{
+    color: red;
+} 
+.li-red span{
+    line-height: 2;
+}
+.li-block{
+    width: 90px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-block-two{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-block-three{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-li{
+    color: #000;
+    margin-top: 10px;
+}
+/* 以人為本 */
+.people-oriented{
+    width: 1200px;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+.gray-block-four{
+    width: 400px;
+    height: 380px;
+    background-color: gray;
+    position: absolute;
+    left: 250px;
+    top: -50px;
+}
+.people{
+    /* border: 5px solid red; */
+    position: relative;
+    left: 100px;
+    bottom: 250px;
+}
+.people img{
+    position: relative;
+}
+.button-four{
+    position: absolute;
+    top: 180px;
+    left: -10px;
+    font-size: 50px;
+}
+.button-four a{
+    color: red;
+}
+.people-oriented-block{
+    width: 300px;
+    text-align: end;
+    /* border: 1px solid green; */
+    position: relative;
+    left: 550px;
+    bottom: 543px;
+}
+.people-oriented-red-block{
+    background-color: red;
+    font-size: 40px;
+    color: white;
+}
+.people-oriented-red-block span{
+    font-size: 80px;
+    writing-mode: vertical-lr;
+}
+.text{
+    background-color: black;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    text-align:justify;
+}
+.text h2{
+    font-size: 24px;
+    margin-top: 5px;
+}
+.text p{
+    margin-top: 5px;
+}
+.list-four{
+    width: 620px;
+    padding: 18px;
+    background-color:whitesmoke;
+    position: relative;
+    bottom: 300px;
+    right: -230px;
+}
+.list-four .li .li-red{
+    color: red;
+} 
+.li-red span{
+    line-height: 2;
+}
+.li-block{
+    width: 90px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.li-block-two{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* 引以為傲 */
+.proud-of{
+    color: white;
+    /* border: 1px solid red; */
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.gray-block-five{
+    width: 320px;
+    height: 200px;
+    background-color: gray;
+    position: absolute;
+    left: 380px;
+    top: -50px;
+}
+.proud{
+    /* border: 1px solid red; */
+    position: relative;
+    left: 250px;
+    bottom: 500px;
+}
+.proud img{
+    position: relative;
+}
+.button-five{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    font-size: 50px;
+}
+.button-five a{
+    color: red;
+}
+.proud-of-block{
+    width: 300px;
+    /* border: 1px solid green; */
+    position: relative;
+    left: -150px;
+    bottom: 450px;
+}
+.proud-of-red-block{
+    background-color: red;
+    font-size: 40px;
+}
+.proud-of-red-block span{
+    font-size: 80px;
+    writing-mode: vertical-lr;
+}
+.text{
+    background-color: black;
+    padding: 15px;
+    font-size: 20px;
+    
+}
+.list-five{
+    width: 620px;
+    /* border: 1px solid purple; */
+    padding: 18px;
+    position: relative;
+    bottom: 280px;
+    right: 115px;
+    background-color: whitesmoke;
+}
+.list-five .li .li-red{
+    color: red;
+} 
+.li-red span{
+    line-height: 2;
+}
+.li-block{
+    width: 90px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-block-two{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-block-three{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+}
+.li-li{
+    color: #000;
+    margin-top: 10px;
+}
