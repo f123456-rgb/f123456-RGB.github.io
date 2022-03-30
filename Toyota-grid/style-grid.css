@@ -1,0 +1,423 @@
+/* 操控樂趣 */
+.control-fun{
+    width: 925px;
+    height: 800px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(14,1fr);
+}
+.control-fun img{
+    grid-column: 3/11;
+    grid-row: 3/12;
+
+}
+.control-fun .button{
+    width: 90px;
+    grid-column: 11/14;
+    grid-row: 7/8;
+}
+.gray-block{
+    background-color: #f5f3f3;
+    grid-column: 9/14;
+    grid-row: 2/6;
+}
+.control-fun-block{
+    grid-column: 1/5;
+    grid-row: 1/5;
+} 
+.control-fun-block h2{
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    grid-column: 1/6;
+    grid-row: 1/3;
+}
+h2 span{
+    margin: 5px;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+}
+.control-fun-block .text{
+    background-color: black;
+    color: white;
+    text-align: left;
+    grid-row: 3/5;
+    grid-column: 1/6;
+}
+.control-fun-block .text h3{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px;
+}
+.text p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 15px 15px;
+}
+.list{
+    background-color: #eee;
+    padding: 20px;
+    grid-column: 2/11;
+    grid-row: 10/14;
+}
+.list .li {
+    margin-top: 10px;
+}
+.list span{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.list ul{
+    margin: 10px 0;
+}
+.list h3{
+    color: red;
+    font-weight: 600;
+    font-size: 18px;
+}
+.list ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
+/* 安全守護 */
+.security-guard{
+    width: 925px;
+    height: 800px;
+    margin: auto;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(14,1fr);
+}
+.security-guard img{
+    grid-column: 2/11;
+    grid-row: 3/10;
+
+}
+.gray-block-two{
+    background-color: #f5f3f3;
+    grid-column: 5/12;
+    grid-row: 2/8;
+}
+.security-guard-block{
+    grid-column: 9/14;
+    grid-row: 1/12;
+}
+.security-guard-block h2{
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+h2 span{
+    margin: 10px;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+}
+.security-guard-block .text{
+    background-color: black;
+    color: white;
+    text-align: left;
+    grid-row: 3/5;
+    grid-column: 1/6;
+}
+.security-guard .text h3{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px;
+}
+.text p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 15px 15px;
+}
+.list-two{
+    background-color: #eee;
+    padding: 20px;
+    grid-column: 5/14;
+    grid-row: 9/13;
+}
+.list-two .li {
+    margin-top: 10px;
+}
+.list-two span{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.list-two ul{
+    margin: 10px 0;
+}
+.list-two h3{
+    color: red;
+    font-weight: 600;
+    font-size: 18px;
+}
+.list-two ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
+/* 乘坐舒適 */
+.comfortable-ride{
+    width: 925px;
+    height: 800px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(14,1fr);
+}
+.comfortable-ride img{
+    grid-column: 3/11;
+    grid-row: 3/12;
+
+}
+.comfortable-ride .button{
+    width: 90px;
+    grid-column: 11/14;
+    grid-row: 7/8;
+}
+.gray-block-three{
+    background-color: #f5f3f3;
+    grid-column: 9/14;
+    grid-row: 2/6;
+}
+.comfortable-ride-block{
+    grid-column: 1/5;
+    grid-row: 1/5;
+} 
+.comfortable-ride-block h2{
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    grid-column: 1/6;
+    grid-row: 1/3;
+}
+h2 span{
+    margin: 5px;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+}
+.comfortable-ride-block .text{
+    background-color: black;
+    color: white;
+    text-align: left;
+    grid-row: 3/5;
+    grid-column: 1/6;
+}
+.comfortable-ride .text h3{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px;
+}
+.text p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 15px 15px;
+}
+.list-three{
+    background-color: #eee;
+    padding: 20px;
+    grid-column: 2/11;
+    grid-row: 10/15;
+}
+.list-three .li {
+    margin-top: 10px;
+}
+.list-three span{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.list-three ul{
+    margin: 10px 0;
+}
+.list-three h3{
+    color: red;
+    font-weight: 600;
+    font-size: 18px;
+}
+.list-three ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
+/* 以人為本 */
+.people-oriented{
+    width: 925px;
+    height: 800px;
+    margin: auto;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(14,1fr);
+}
+.people-oriented img{
+    grid-column: 2/11;
+    grid-row: 3/10;
+
+}
+.gray-block-four{
+    background-color: #f5f3f3;
+    grid-column: 5/12;
+    grid-row: 2/8;
+}
+.people-oriented-block{
+    grid-column: 9/14;
+    grid-row: 1/12;
+}
+.people-oriented-block h2{
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+h2 span{
+    margin: 10px;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+}
+.people-oriented-block .text{
+    background-color: black;
+    color: white;
+    text-align: left;
+    grid-row: 3/5;
+    grid-column: 1/6;
+}
+.people-oriented .text h3{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px;
+}
+.text p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 15px 15px;
+}
+.list-four{
+    background-color: #eee;
+    padding: 20px;
+    grid-column: 5/14;
+    grid-row: 9/13;
+}
+.list-four .li {
+    margin-top: 10px;
+}
+.list-four span{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.list-four ul{
+    margin: 10px 0;
+}
+.list-four h3{
+    color: red;
+    font-weight: 600;
+    font-size: 18px;
+}
+.list-four ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
+/* 引以為傲 */
+.proud-of{
+    width: 925px;
+    height: 800px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(14,1fr);
+}
+.proud-of img{
+    grid-column: 3/11;
+    grid-row: 3/12;
+
+}
+.proud-of .button{
+    width: 90px;
+    grid-column: 11/14;
+    grid-row: 7/8;
+}
+.gray-block-five{
+    background-color: #f5f3f3;
+    grid-column: 9/14;
+    grid-row: 2/6;
+}
+.proud-of-block{
+    grid-column: 1/5;
+    grid-row: 1/5;
+} 
+.proud-of-block h2{
+    font-size: 32px;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    grid-column: 1/6;
+    grid-row: 1/3;
+}
+h2 span{
+    margin: 5px;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+}
+.proud-of-block .text{
+    background-color: black;
+    color: white;
+    text-align: left;
+    grid-row: 3/5;
+    grid-column: 1/6;
+}
+.proud-of .text h3{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px;
+}
+.text p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 15px 15px;
+}
+.list-five{
+    background-color: #eee;
+    padding: 20px;
+    grid-column: 2/11;
+    grid-row: 10/15;
+}
+.list-five .li {
+    margin-top: 10px;
+}
+.list-five span{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.list-five ul{
+    margin: 10px 0;
+}
+.list-five h3{
+    color: red;
+    font-weight: 600;
+    font-size: 18px;
+}
+.list-five ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
