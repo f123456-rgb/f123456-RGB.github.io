@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<head>
+    <style>
+        .Self-introduction{
+            width: 1000px;
+            height: 800px;
+            margin: auto;
+            border: 10px solid red;
+        }
+        .Self-introduction img{
+            margin-left: 300px;
+        }
+        .name{
+            width: 1000px;
+            display: flex;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .span{
+            margin-top: 6px;
+            margin-left: -5px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .email{
+            width: 1000px;
+            display: flex;
+            padding: 10px;
+        }
+
+        .school{
+            width: 1000px;
+            display: flex;
+            padding: 10px;
+        }
+
+        .Interest{
+            width: 1000px;
+            display: flex;
+            padding: 10px;
+        }
+        .picture{
+            position: absolute;
+            left: 300px;
+            bottom: 1px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Self-introduction">
+        <img src="./79623.jpg" alt="" height="200" width="400">
+            <div class="null"></div>
+        <div class="name">
+            <h2>姓名：</h2>
+                <div class="span">
+                    <span>林哲維</span>
+                </div>
+        </div>
+        <div class="email">
+            <h2>電子信箱：</h2>
+                <div class="span">
+                    <span>gcobs107027@gmail.com</span>
+                </div>
+        </div>
+        <div class="school">
+            <h2>學校：</h2>
+            <div class="span">
+                <span>中華大學</span>
+            </div>
+        </div>
+        <div class="Interest">
+            <h2>興趣：</h2>
+            <div class="span">
+                <span>看商刊</span>
+                <span>、</span>
+                <span>彈鋼琴</span>
+                <span>、</span>
+                <span>看動物視頻</span>
+            </div>
+        </div>
+    </div>
+
+        <div class="picture">
+            <h1></h1>
+            <img id="image1" src="" alt="">
+        
+            <script>
+                let h1 =document.querySelector("h1");
+                let img =document.getElementById("image1");
+        
+                let moviename="";
+                const movieUrl="";
+        
+                h1.innerText = moviename;
+                
+        
+                img.setAttribute("src",movieUrl); //movirUrl是圖片網址
+                img.setAttribute("alt","");
+                img.setAttribute("class","picturestyle");
+                document.write("<br>");
+        
+                const imageArrary=[
+                "https://i03piccdn.sogoucdn.com/c9868c9e6b549d95",
+                "https://i.ytimg.com/vi/O-XB9Aag48Y/mqdefault.jpg",
+                "https://www.easyatm.com.tw/img/2/532/nBnauM3XwYzM2gDO0ETNyMzMzQTMxUTM0YTMwADMwAzMwIzLxUzL4MzLt92YucmbvRWdo5Cd0FmL0E2LvoDc0RHa.jpg"
+                ];
+                imageArrary.forEach((url, index)=>{
+                    document.write(`<img class="picturestyle" src="${url}">`);
+        
+                })
+            </script>   
+        </div> 
+</body>
+</html>
