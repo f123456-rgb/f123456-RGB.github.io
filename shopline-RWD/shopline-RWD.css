@@ -1,0 +1,424 @@
+
+/* 手機板 */
+    @media  screen and (max-width:768px) {
+    .main-header{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    }
+    .logo{
+        vertical-align: top;
+    }
+    .logo img{
+        vertical-align: top;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    #menu-control{
+        position: absolute;
+        z-index: 2;
+        display: none;
+    }
+    #menu-control:checked ~ .main-header .main-nav{
+        display: block;
+    }
+
+    .main-nav{
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        top: 50px;
+        left: 0;
+        display: none;
+        line-height: 2;
+        }
+    .main-nav a{
+        display: block;
+        padding: 10px 20px;
+        color: #000;
+        text-decoration: none;
+        } 
+    .hh{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-right: 60px; 
+        background-color: white;
+        }
+    .button-block{
+            width: 100%;
+            position: relative;
+            background-color: white;
+        }
+    .Free-trial{
+        width: 85%;
+        border-radius: 40px;
+        background-color: rgb(20,109,243);
+        margin: 20px ;
+        font-size: 15px;
+        text-align: center;
+    }   
+    .Free-trial a{
+        color: white;
+        text-decoration: none;
+
+
+    }
+    .Login-to-the-online-store{
+        width: 85%;
+        border-radius: 40px;
+        background-color: rgb(20,109,243);
+        margin: 20px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .Login-to-the-online-store a{
+        color: black; 
+        text-decoration: none;   
+    }
+    .space{
+        width: 100%;
+        height: 20%;
+        position: fixed;
+        background-color: white;
+        display: flex;
+    }
+
+    .block-one{
+        width: 100%;
+        position:fixed;
+        margin-top: 10%;
+        display: flex;
+        background-color:#00142D;
+        border: 1px solid black;
+    }
+    .Store-inquiry{
+        width: 45%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        background-color: #00142D;
+    }
+    .Store-inquiry a{
+        text-decoration: none;
+        color: white;
+    }
+    p::before{
+        content: '|';
+        color: white;
+        align-items: center;
+        font-size: 30px;
+        font-weight:normal;
+        width: 10%;
+    }
+    .Store-opening-briefing{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 60px;
+        background-color: #00142D;
+        font-size: 15px;
+    }
+    .Store-opening-briefing a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .header{
+        width: 100%;
+        background-color:#00142d;
+    }
+    .header img{
+        margin-top: 25%;
+        width: 80%;
+    }
+    h2{
+        color: white;
+        padding: 20px;
+        margin-left: 60px;
+        font-size: 25px;
+    }
+    span{
+        color: green;
+        margin-left: 50px;
+        margin-top: 800px;
+        font-size: 25px;
+    }
+    h3{
+        color: white;
+        padding: 35px;
+        line-height: 2;
+        font-size: 14px;
+    }
+    .header-block{
+        width: 100%; 
+    }
+    .label{
+        width: 100%;
+    }
+    .label-email{
+        width: 80%;
+        margin-bottom: 200px;
+    }
+    .label-email .input-email{
+        width: 80%;
+        font-size: 15px;
+        background-color: #00142d;
+        border: #00142D;
+        border-bottom: 1px solid #fff;
+        margin-left: 10%;
+    }
+    .btn-try{
+        display: inline-block;
+        width:80%;
+        height: 40px;
+        background-color: #0061ff;
+        color: #fff;
+        border-radius: 20px;
+        margin: 15px 30px;
+    }
+    .btn-try:hover{
+        background-color: #0747A6;
+    }
+
+    .text{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .text h4{
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 70px;
+    } 
+    .text-one{
+        width: 95%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .picture-block{
+        width: 100%;
+    }
+    .picture-block img{
+        margin-left: 25px;
+        margin-top: 30px;
+    }
+    .text-two{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 22px;
+    }
+    .text-two h4{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .text-three{
+        width: 95%;
+        margin-top: 60px;
+        margin-left: 20px;
+        line-height: 2;
+    }
+    .text-three p{
+        display: flex;
+        text-justify: distribute;
+        font-size: 18px;
+    }
+    .list{
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+        line-height: 2;
+    }
+    .li{
+        width: 80%;
+        margin-left: 45px;
+
+    }
+    .Store-Secret-Skills{
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    .Store-Secret-Skills a{
+        text-decoration: none;
+        color: #0061ff;
+    } 
+
+    .text-four{
+        width: 100%;
+    }
+    .text-four h4{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .text-four p{
+        display: flex;
+        text-justify: distribute;
+        font-size: 18px;
+        margin-left: 20px;
+        line-height: 2;
+    }
+    .text-four .list{
+        display: flex;
+        width: 100%;
+        margin-top: -40px;
+    }
+    .Learn-more-about-cash-flow{
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .Learn-more-about-cash-flow a{
+        text-decoration: none;
+        color: #0061ff;
+    }
+
+    .text-five{
+        width: 100%;
+    }
+    .text-five h4{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .text-five p{
+        display: flex;
+        text-justify: distribute;
+        font-size: 18px;
+        margin-left: 15px;
+        line-height: 2;
+    }
+    .text-five .list{
+        display: flex;
+        width:100%;
+        margin-top: -30px;
+    }
+    .see-more-discount-modules{
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .see-more-discount-modules a{
+        color: #0061ff;
+        text-decoration: none;
+    }
+
+    .text-six{
+        width: 100%;
+    }
+    .text-six h4{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .text-six p{
+        display: flex;
+        text-justify: distribute;
+        font-size: 18px;
+        margin-left: 15px;
+        margin-top: 40px;
+        line-height: 2;
+    }
+    .text-six .list{
+        display: flex;
+        width:100%;
+        margin-top: 40px;
+    }
+    .Learn-more-about-omnichannel-integration{
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .Learn-more-about-omnichannel-integration a{
+        color: #0061ff;
+        text-decoration: none;
+    }
+
+    .More-features-and-services-block{
+        width: 100%;
+        background-color:whitesmoke;
+        margin-top: 100px;
+        padding: 3%;
+    }
+    .More-features-and-services-block h4{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 60px;
+    }
+    .list_two{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        line-height: 2;
+    }
+    .odd{
+        width: 40%;
+    }
+    .odd img{
+        width: 50%;
+    }
+    .odd h5{
+        font-size: 20px;
+    }
+    .odd p{
+        display: flex;
+        text-justify: distribute;
+    }
+
+    .even{
+        width: 40%;
+        text-align: center;
+        margin-top: -9px;
+    }
+    .even img{
+        width: 50%;
+        margin-top: 38px;
+        display: flex;
+        justify-content: center;
+    }
+    .even h5{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .even p{
+        display: flex;
+    } 
+        /* 人氣品牌一致推間使用  */
+    .popular_brand{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .popular_brand h5{
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: -28px;
+    }
+    .popular_brand .span_two{
+        font-size: 30px;
+        color:#0061ff;
+    }
+    .popular_brand a{
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 25px;
+        margin-top: 20px;
+        text-decoration: none;
+        color:#0061ff;
+    }
+    .popular_brand p{
+        display: flex;
+        margin-top: 20px;
+        line-height: 2;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+}
