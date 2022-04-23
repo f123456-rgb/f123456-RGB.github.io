@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/30ad28d491.js" crossorigin="anonymous"></script>
+    <title>孟仕軒的小部落</title>
+    <style>
+    .header_top{
+            display: flex;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .one{
+            width: 6%;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .one a{
+            display: flex;
+            color: #ccc;
+            font-weight: bold;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .one a:hover{
+            color: black;
+        }
+        nav{
+            display: flex;
+            background: blue;
+            width: 70%;
+            justify-content: space-evenly;
+        }
+        .nav a{
+            display: flex;
+            text-decoration: none;
+            font-size: 20px;
+            align-items: center;
+            color: white;
+        }
+        .nav a:hover{
+            color: black;
+        }
+        .button{
+            background-color:whitesmoke;
+            /* border: 1px solid yellow; */
+            display: flex;
+            flex-grow: 2;
+        }
+        .button a{
+            font-size: 40px;
+            text-decoration: none;
+            color: black;
+        }
+        .button a:hover{
+            color: blue;
+        }
+
+        .header{
+            display: flex;
+            width: 100%;
+            /* border: 1px solid red; */
+            margin-top: 100px;
+        }
+        .text{
+            /* width: 20%; */
+            display: flex;
+            flex-direction: column;
+            margin-left: 400px;
+            
+            /* border: 1px solid black; */
+            
+        }
+        .text_icons-block{
+            display: flex;
+            /* border: 1px solid red; */
+            text-align: justify;
+        }
+        .icons{
+            /* width: 50%; */
+            /* border: 1px solid yellow; */
+            font-size: 40px;
+            margin-left: 20px;
+        }
+        .text h2{
+            font-size: 40px;
+        }
+        .text p{
+            font-size: 20px;
+        }
+        .picture{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="header_top">
+        <div class="one">
+            <a href="#"><img src="" alt="">部落格</a>
+        </div>
+        <nav class="nav">
+            <a href="./personal-interest.html">個人興趣</a>
+            <a href="#">旅遊景點</a>
+            <a href="#">美食介紹</a>
+            <a href="#">娛樂場所</a>
+        </nav>
+        <button class="button"><a href="#">請點擊我</a></button>
+    </section>
+    <section class="header">
+        <div class="text">
+            <div class="text_icons-block">
+                <h2>本人帥照</h2>
+                <div class="icons">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+            <br>
+            <p>我喜歡打撞球</p>
+                <br>
+            <p>有時偶爾還會變身</p>
+            <p>廢話不多說，接下來請繼續看下去</p>
+                <br>
+            <p>也可以直接點擊上面的導覽看</p> 
+        </div>
+        <div class="picture">
+            <img src="./img.jpg" alt="" height="250" width="250">
+        </div>
+    </section>
+</body>
+</html>
