@@ -2192,10 +2192,10 @@
                         let imageurl = data.querySelector("img").src;
 
                         let hero = {
-                            "id": id,
-                            "heroname": heroname,
-                            "herofile": herofile,
-                            "imageurl": imageurl
+                            "編號": id,
+                            "英雄名稱": heroname,
+                            "英雄介紹": herofile,
+                            "網址": imageurl
                         }
 
                         heroArray.push(hero);
@@ -2215,7 +2215,7 @@
                         alert("請先建立陣列資料");
                         return;
                     }
-                    //alert("以文字迭代英雄人物資料！");
+                    alert("以文字迭代英雄人物資料！");
     
                     heroArray.forEach((hero, index) => {
                         let p1 = document.createElement("p");
@@ -2228,19 +2228,62 @@
     
                 
                 btnTableHero.addEventListener("click", function () {
+                     //創建表格
+                    let table=document.createElement('table');
+                    let thead=document.createElement('thead');
+                    let tbody=document.createElement('tbody');
+                    // 增加表格樣式
+                    table.setAttribute("class","table table-bordered table-success table-striped text-center");
+                    
                     if (heroArray.length == 0) {
                         alert("請先建立陣列資料");
                         return;
                     }
-    
+                    // 清除container
+                    container.innerHTML = "";
                     alert("以表格呈現英雄人物資料！");
+
+                    let keyArray = Object.keys(heroArray[0]);
+
+                    let tr = document.createElement("tr");
+
+                    keyArray.forEach(title=>{
+
+                        let th = document.createElement("th");
+
+                        th.innerText = title;
+
+                        tr.appendChild(th);
+                    });
+
+                    tbody.appendChild(tr);
+
+
+
+                    
+                heroArray.forEach((hero)=>{
+
+                    let tr = document.createElement("tr");
+
+                    let valueArray = Object.values(hero);
+
+                    valueArray.forEach(columndata=>{
+                        let td = document.createElement("td");
+                    
+                        td.innerText = columndata;
+                    
+                        tr.appendChild(td);
+                    });
+
+                    tbody.appendChild(tr);
+                    });
+
+
+                    table.appendChild(tbody)
+
+                    container.appendChild(table);
                 });
             }
-    
         </script>
-
-
-
 </body>
-
 </html>
