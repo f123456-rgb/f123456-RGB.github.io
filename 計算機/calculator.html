@@ -38,8 +38,8 @@ input{
         <input type="text" id="box">
     </div>
     <div class="btn-ctrl d-flex flex-wrap w-100 justify-content-between">
-        <button class="btn ac btn-danger" onclick="clear()">C</button>
-        <button class="btn re btn-warning" onclick="greater_than()">></button>
+        <button class="btn ac btn-danger" onclick="clear_key()">C</button>
+        <button class="btn re btn-warning" onclick="back()">></button>
         <button class="btn add btn-primary" onclick="add()">+</button>
         <button class="btn num" id="1" onclick="number(this.id)">1</button>
         <button class="btn num" id="2" onclick="number(this.id)">2</button>
@@ -67,7 +67,7 @@ input{
     function number(num){
         box.value += num;
     }
-    function clear(){
+    function clear_key(){
         box.value = " ";
     }
     function add(){
@@ -88,7 +88,7 @@ input{
     function percentage(){
         box.value = Math.sqrt(box.value);
     }
-    function greater_than(){
+    function back(){
         box.value = box.value.substring(0,box.value.length-1);
     }
 
