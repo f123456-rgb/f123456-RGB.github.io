@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>猜數字遊戲</title>
+    <style>
+        .contianer {
+            max-width: 960px;
+        }
+        .AB{
+            max-width: 960px;
+            margin: auto;
+        }
+        .AB .game{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .AB .game h1{
+            color: black;
+        }
+        .check{
+            max-width: 960px;
+            margin: auto;
+        }
+        .show{
+            display: flex;
+            flex-direction: row;
+        }
+        ._a_b{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            background-color:rgb(255, 0, 204);
+            text-align: center;
+        }
+        .ans{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="AB">
+        <div class="game">
+            <h1>猜?A?B小遊戲</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col  text-center">
+                <button type="button" id="btn_start" class="btn btn-outline-secondary w-100">開始</button>
+            </div>
+            <div class="col  text-center">
+                <button type="button" id="btn_replay" class="btn btn-outline-secondary w-100">放棄重來</button>
+            </div>
+            <div class="col  text-center">
+                <button type="button" id="btn_see_ans" class="btn btn-outline-secondary w-100">看答案</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="check">
+        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">猜答案</span>
+                    <input type="text" class="form-control" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">猜</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let btn_start, btn_replay, btn_see_ans , random, guess_num , input_num ,check;
+        let random_ans = [];
+        window.onload = function () {
+            btn_start = document.getElementById("btn_start");
+            btn_replay = document.getElementById("btn_replay");
+            btn_see_ans = document.getElementById("btn_see_ans");
+            guess_num = document.getElementById("button-addon2");
+            input_num = document.querySelector(".form-control");
+            check = document.querySelector(".check");
+-            
+            btn_start.addEventListener("click", function () {
+                startgame();
+            });
+
+            function startgame() {
+                for(let i=0; random_ans.length<4; i++){
+                    // Math.random()*(M-m) + m --> m~M (讓亂數產生的最小值，為變數設定的最小值)
+                    random = Math.floor(Math.random() * 10);
+                    //把題目輸出到畫面上
+
+                    // 確認數字是否有重複，如果有重複就繼續跑亂數
+                    if(random_ans.includes(random))
+                    {
+                        random = Math.floor(Math.random() * 10);
+                    }
+                    else{
+                        random_ans.push(random);
+                    }
+                }
+            }
+
+            //猜數字區按鈕
+            guess_num.addEventListener("click", function () {
+                
+                //先把a和b次數初始化為0
+                let a = 0;
+                let b = 0;
+
+                //Array.from()意思是括號內的東西轉換成陣列
+                let input_num_array = Array.from(input_num.value)
+                
+                //先正向判斷 位置對數字對
+                for(let i=0; i<=3; i++){
+                    //以下條件random_ans[0]的值 == input_num_array[0]的值
+                    if(random_ans[i] == input_num_array[i]){
+                        a++;
+                    }
+                    //在反向判斷 數字對
+                    for(let j=3; j>=0; j--){
+                        //以下條件random_ans[0]的值 == input_num_array[3]的值
+                        if(random_ans[i] == input_num_array[j]){
+                            b++;
+                        }
+                    }
+                }                
+
+                //創一個 div標籤 節點
+                let show = document.createElement("div");
+                //設定一個類別名稱，然後去上面的style區設定CSS樣式
+                show.setAttribute("class", "show");
+
+                //顯示幾a幾b區
+                //創一個 div標籤 節點
+                let _a_b = document.createElement("div");
+                //設定一個類別名稱，然後去上面的style區設定CSS樣式
+                _a_b.setAttribute("class", "_a_b");
+                //在_a_b寫入幾a幾b轉純文字，b-a條件 幾a幾b，幾加幾不能大於四。
+                _a_b.innerText = `${a}A${b-a}B`;
+                //把_a_b，加入到show
+                show.appendChild(_a_b);
+                //把show，加入到check
+                check.appendChild(show);
+
+                //在a次數為4時，也就是 4A0B 。 
+                if (a == 4) {
+                    //背景顏色要改成 yellow 。
+                    _a_b.setAttribute("style", "background-color: yellow;");
+                }
+
+                //顯示使用者輸入的數字區    
+                //創一個 div標籤 節點
+                let ans = document.createElement("div");
+                //設定一個類別名稱，然後去上面的style區設定CSS樣式
+                ans.setAttribute("class", "ans");
+                //在ans寫入使用者輸入的數字轉純文字
+                ans.innerText = input_num.value;
+                //把ans，加入到show
+                show.appendChild(ans);
+                //把show，加入到check
+                check.appendChild(show);
+            });
+
+            //重完按鈕區
+            btn_replay.addEventListener("click", function () {
+                //做畫面更新
+                location.reload();
+            });
+
+            //看答案按鈕區
+            btn_see_ans.addEventListener("click", function () {
+                //random_ans轉成字串型態，在用replace(/要移除的符號/g,"要新增的符號")，g的意思是選取到全部要移除的符號。
+                alert(`答案是${random_ans.toString().replace(/,/g,"")}`);
+            });
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
