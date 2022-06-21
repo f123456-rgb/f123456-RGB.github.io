@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>apple</title>
+<link rel="stylesheet" href="ipad.css">
+<style>
+    
+.right,
+.left{
+    margin-top: 30px;
+}
+.ipad-pic{
+    position:sticky;
+    top: 80px;
+}
+button
+.color{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+}
+.color-btn{
+    width: 33%;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+div[class^="main"]{
+    margin-top: 30px;
+}
+li{
+    display: block;
+}
+ul{
+    justify-content: space-evenly;
+    width: 100%;
+}
+h2:hover{
+    color: blue;
+}
+.banner{
+    background-color: #fff;
+    margin-top: 0px;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+}
+.btn:hover{
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px;
+
+}
+#time{
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px;
+    font-size: 30px;
+}
+div[class^="carousel"]{
+    width: 300px;
+}
+.slide{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.hb{
+    display: none;
+}
+@media screen and (max-width:767px){
+    .btn{
+        width: 90%;
+        margin-left: 27px;
+        margin-right: 27px;
+    }
+    .ipad-pic{
+        width: 100%;
+    }
+    .slide{
+        margin: auto;
+    }
+    .hb{
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+    .hb::after{
+        content: '‒';
+        color: #fff;
+        position: absolute;
+    }
+    .hb::before{
+        content: '‒';
+        color: #fff;
+        position: absolute;
+    }
+    .container{
+        flex-direction: row-reverse;
+        position: relative;
+    }
+}
+</style>
+</head>
+<body>
+    <!-- <marquee id="time" behavior="ALTERNATE" direction="" SCROLLAMOUNT="30">歡迎光臨</marquee> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container col-12 col-lg-12">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link ipad-pro text-light" href="#">iPad Pro</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link ipad-air text-light" href="#">iPad Air</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link  text-light" href="#">iPad</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link  text-light" href="#">iPad mini</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hb">‒</div>
+        </div>
+        </nav>
+<div class="banner d-flex">
+    <p class="banner-p1 mx-auto py-3"></p>
+    <p class="banner-p  mx-auto py-3"></p>
+</div>
+<div class="container d-flex flex-wrap">
+    <div class="left col-12 col-lg-6">
+        <img class="ipad-pic" src="" alt="">
+    </div>
+    <div class="right col-12 col-lg-6">
+        <div class="title">
+            <h1 class="title-h1"></h1>   
+            <p class="title-p"></p>
+        </div>
+        <div class="main-color">
+            <div class="color-title mt-3">
+                <h2 class="color-h2"></h2>
+            </div>
+            <div class="color">
+                
+            </div>
+        </div>
+        <div class="main-storage">
+            <div class="storage-title mt-3">
+                <h2 class="storage-h2"></h2>
+            </div>
+            <div class="storage"></div>
+        </div>
+        <div class="main-network">
+            <div class="network-title mt-3">
+                <h2 class="network-h2"></h2>
+            </div>
+            <div class="network"></div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="" class="d-block c1  w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="" class="d-block  c2 w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="" class="d-block  c3 w-100" alt=""> 
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                
+            </button>
+            </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script>
+    let bp1 = document.querySelector(".banner-p1")
+    let bp = document.querySelector(".banner-p")
+    let air =document.querySelector(".ipad-air")
+    let banner = document.querySelector(".banner")
+    banner.style.transform = 'scale(0)'
+    let ch2 =document.querySelector(".color-h2")
+    let sh2 = document.querySelector(".storage-h2")
+    let nh2 = document.querySelector(".network-h2")
+    let img = document.querySelector("img")
+    let pro = document.querySelector(".ipad-pro")
+    let array;
+    let xhr = new XMLHttpRequest();
+    let Url = "https://raw.githubusercontent.com/RainRoc1222/RainRoc1222.github.io/main/ipad.json"
+    window.onload = function(){
+        let container = document.querySelector(".container")
+        XHR()
+    }
+    function XHR(){
+        xhr.onload = function(){
+            array = JSON.parse(this.responseText)
+        }
+        xhr.open("GET",Url);
+        xhr.send();
+    }
+    let count = 0
+    pro.addEventListener('click',function(){
+        count += 1;
+        if(count==1){
+            banner.style.transform = 'scale(1)'
+            img.setAttribute("src","https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000")
+            let h1 = document.querySelector(".title-h1")
+            h1.innerText = "購買iPad PRo"
+            let p = document.querySelector(".title-p")
+            p.innerText = "購買 iPad 可享免額外付費運送服務。"
+            ch2.innerText = "外觀"
+            sh2.innerText= "儲存裝置"
+            nh2.innerText = "連線能力"
+            let left = document.querySelector(".left")
+            bp1.innerText = "iPad Pro"
+            bp.innerText ="NT$24,900起"
+            let cimg1 = document.querySelector(".c1")
+            let cimg2 = document.querySelector(".c2")
+            let cimg3 = document.querySelector(".c3")
+            cimg1.setAttribute("src","https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipadpro-accessory-pencil-card3?wid=320&hei=264&fmt=p-jpg&qlt=95&.v=1620073130000")
+            cimg2.setAttribute("src","https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipadpro-accessory-pencil-card2?wid=320&hei=264&fmt=p-jpg&qlt=95&.v=1620073130000")
+            cimg3.setAttribute("src","https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipadpro-accessory-pencil-card1?wid=320&hei=264&fmt=p-jpg&qlt=95&.v=1620073129000")
+            left.append(img)
+            ColorButton(0)
+            StorageButton(0)
+            NetWork(0)
+            }
+    })  
+    function ColorButton(x){
+        let i = Object.values(array)
+        debugger
+        let j = i[x]
+        let k = j.color
+        k.forEach((item,index) => {
+                let a = j.btn
+                let b = j.url
+                let colorimg = document.createElement("img")
+                colorimg.setAttribute("src",`${a[index]}`)
+                let btn = document.createElement("button")
+                btn.setAttribute("class","btn color-btn active")
+                let main = document.querySelector(".main-color")
+                let color = document.querySelector(".color")
+                let p  = document.createElement("p")
+                p.innerText = k[index]
+                let right = document.querySelector(".right")
+                btn.append(colorimg,p)
+                color.append(btn)  
+                main.style.borderTop = '1px solid #ccc'
+                btn.addEventListener('click',function(){
+                    img.setAttribute("src",`${b[index]}`)
+                    color.style.transform = 'scale(0)'
+                    ch2.innerText = k[index]
+                    let storage = document.querySelector(".main-storage")
+                    storage.style.marginTop = '-100px'
+                    ch2.addEventListener('click',function(){
+                        color.style.transform = 'scale(1)'
+                        ch2.innerText = "外觀"
+                        storage.style.marginTop = '30px'
+                    })
+                })     
+            })
+    }
+    function StorageButton(x){
+        let i = Object.values(array)
+        let j = i[x]
+        let k = j.storage
+        k.forEach((item,index)=>{
+            let main = document.querySelector(".main-storage")
+            main.style.borderTop = '1px solid #ccc'
+            let a = j.price
+            let storage = document.querySelector(".storage")
+            let btn = document.createElement("button")
+            btn.setAttribute("class","btn color-btn active")
+            let p  = document.createElement("p")
+            p.innerText = k[index]
+            let p1  = document.createElement("p")
+            p1.innerText = a[index]
+            btn.append(p,p1)
+            storage.append(btn)
+            btn.addEventListener('click',function(){
+                sh2.innerText = `${k[index]}`
+                bp.innerText = a[index]
+                let storage = document.querySelector(".storage")
+                storage.style.transform = 'scale(0)'
+                let net = document.querySelector(".main-network")
+                net.style.marginTop = '-200px'
+                sh2.addEventListener('click',function(){
+                            storage.style.transform = 'scale(1)'
+                            sh2.innerText = "儲存裝置"
+                            net.style.marginTop = '30px'
+                        })
+            })
+        })
+    }
+        function NetWork(x){
+            let i = Object.values(array)
+            let j = i[x]
+            let k =j.wifi
+            k.forEach((item,index)=>{
+                let main = document.querySelector(".main-network")
+                main.style.borderTop = '1px solid #ccc'
+                let a = j.price
+                let btn = document.createElement("button")
+                btn.setAttribute("class","btn color-btn active")
+                let p1  = document.createElement("p")
+                p1.innerText = k[index]
+                let p  = document.createElement("p")
+                p.innerText = a[index]
+                btn.append(p1,p)
+                let network = document.querySelector(".network")
+                network.append(btn)
+                btn.addEventListener('click',function(){
+                    nh2.innerText = k[index]
+                    bp.innerText = a[index]
+                    let net = document.querySelector(".network")
+                    net.style.transform = 'scale(0)'
+                    let ccc = document.querySelector(".slide")
+                    ccc.style.marginTop = '-100px'
+                    nh2.addEventListener('click',function(){
+                        net.style.transform = 'scale(1)'
+                        ccc.style.marginTop = '50px'
+                        nh2.innerText = "連線能力"
+                    })
+                })
+            })
+    }
+</script>
+</body>
+</html>
